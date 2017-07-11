@@ -1,6 +1,7 @@
 # Ultimate AppLocker ByPass List
 The goal of this repository is to document the most common techniques to bypass AppLocker. 
 These bypass techniques are based on the "Create Default Rules" in AppLocker.
+**Bypasses has not yet been verified against DLL rules**
 Please contribute and do point out errors or resources I have forgotten.
 
 
@@ -188,3 +189,21 @@ Links:
 https://web.archive.org/web/20161008143428/http://subt0x10.blogspot.com/2016/09/application-whitelisting-bypass-csiexe.html
 
 
+
+## 20. CPL loading location manipulation
+
+Control.exe
+
+Links:  
+https://pentestlab.blog/2017/05/24/applocker-bypass-control-panel/
+https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulation/
+
+
+
+## 21. msxsl.exe
+
+msxsl.exe customers.xml script.xsl
+
+Links:  
+https://pentestlab.blog/2017/07/06/applocker-bypass-msxsl/
+https://gist.github.com/subTee/d9380299ff35738723cb44f230ab39a1
