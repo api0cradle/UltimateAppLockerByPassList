@@ -7,5 +7,7 @@ PLACEHOLDER
 
 ?????.exe Parameter
 
+Requires admin: Yes|No
+
 Links:  
 http://linkto.somethingAwesomeContainingInformationAboutTheBypass.com
