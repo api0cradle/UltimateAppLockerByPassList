@@ -1,8 +1,16 @@
 # Ultimate AppLocker ByPass List
 The goal of this repository is to document the most common techniques to bypass AppLocker. 
-These bypass techniques are based on the "Create Default Rules" in AppLocker.
-**Bypasses has not yet been verified against DLL rules**
+This README file contains a complete list of all known bypasses.
+Since AppLocker can be configured in different ways it makes sense to have "master" list of bypasses. 
+
+**There are verified lists for EXE and DLL bypasses.**
+These bypasses are based on the default rules created with AppLocker
+-	BypassDLL-DefaultRules.MD
+-	BypassEXE-DefaultRules.MD
+
 Please contribute and do point out errors or resources I have forgotten.
+Remember that bypass techniques for BypassDLL and BypassEXE must be verified.
+These list should only contain valid bypasses. 
 
 
 ## 1. Rundll32.exe
