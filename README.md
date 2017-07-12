@@ -5,8 +5,8 @@ Since AppLocker can be configured in different ways it makes sense to have "mast
 
 **There are verified lists for EXE and DLL bypasses.**
 These bypasses are based on the default rules created with AppLocker
--	BypassDLL-DefaultRules.MD
--	BypassEXE-DefaultRules.MD
+-	[BypassDLL-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/BypassDLL-DefaultRules.md)
+-	[BypassEXE-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/BypassEXE-DefaultRules.md)
 
 Please contribute and do point out errors or resources I have forgotten.
 Remember that bypass techniques for BypassDLL and BypassEXE must be verified.
