@@ -105,12 +105,13 @@ https://msitpros.com/?p=3860
 
 InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll
 
-Requires admin: ?
+Requires admin: No
 
 Links:  
 https://github.com/subTee/AllTheThings
 https://pentestlab.blog/2017/05/08/applocker-bypass-installutil/
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_12
+http://subt0x10.blogspot.no/2017/09/banned-file-execution-via.html
 
 
 
@@ -300,3 +301,15 @@ Requires admin: No
 
 Links:
 http://www.hexacorn.com/blog/2017/07/31/the-wizard-of-x-oppa-plugx-style/
+
+
+## 25. fsi.exe
+
+fsi.exe c:\folder\d.fscript
+
+Requires admin: No
+
+Links:
+https://gist.github.com/NickTyrer/51eb8c774a909634fa69b4d06fc79ae1
+https://twitter.com/NickTyrer/status/904273264385589248
+https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/fsharp-interactive/
