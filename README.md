@@ -313,3 +313,14 @@ Links:
 https://gist.github.com/NickTyrer/51eb8c774a909634fa69b4d06fc79ae1
 https://twitter.com/NickTyrer/status/904273264385589248
 https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/fsharp-interactive/
+
+
+
+## 26. odbcconf.exe
+
+odbcconf -f file.rsp
+
+Requires admin: ?
+
+Links:
+https://gist.github.com/NickTyrer/6ef02ce3fd623483137b45f65017352b
