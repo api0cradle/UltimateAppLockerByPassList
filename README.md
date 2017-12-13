@@ -6,7 +6,7 @@ This README.MD will be the master and will be updated with known and possible Ap
 
 **I have created a list of verified bypasses that works agains the default rules created with AppLocker.**
 
-For details on how I verified you can check my blog: https://oddvar.moe
+For details on how I verified you can check my blog: https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/ 
 
 [VerifiedBypasses-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/VerifiedBypasses-DefaultRules.md)
 
