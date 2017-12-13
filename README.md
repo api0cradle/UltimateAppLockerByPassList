@@ -4,11 +4,12 @@ This README file contains a complete list of all known bypasses.
 Since AppLocker can be configured in different ways it makes sense to have master list of bypasses. 
 This README.MD will be the master and will be updated with known and possible AppLocker bypasses.
 
-**There are verified lists for EXE and DLL bypasses.**
-These bypasses are based on the default rules created with AppLocker. 
+**I have created a list of verified bypasses that works agains the default rules created with AppLocker.**
 
--	[BypassDLL-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/BypassDLL-DefaultRules.md)
--	[BypassEXE-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/BypassEXE-DefaultRules.md)
+For details on how I verified you can check my blog: https://oddvar.moe
+
+[VerifiedBypasses-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/VerifiedBypasses-DefaultRules.md)
+
 
 
 If you are wondering how to create the default rules you can follow this guide:
@@ -40,6 +41,7 @@ Notes:
 Links:  
 https://pentestlab.blog/2017/05/23/applocker-bypass-rundll32/
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_7
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Rundll32.md
 
 
 
@@ -53,6 +55,7 @@ Notes:
 
 Links:  
 https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Regsvr32.md
 
 
 
@@ -71,6 +74,7 @@ https://github.com/Cn33liz/MSBuildShell
 https://github.com/Cn33liz/MS17-012
 https://pentestlab.blog/2017/05/29/applocker-bypass-msbuild/
 https://www.youtube.com/watch?v=aSDEAPXaz28
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Trusted_Developer_Utilities.md
 
 
 
@@ -85,7 +89,8 @@ Notes:
 
 Links:  
 https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
-https://gist.githubusercontent.com/subTee/fb09ef511e592e6f7993/raw/e9b28e7955a5646672267a61e9685fc5a4ab5f2a/regsvcs.cs
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Payloads/RegSvcsRegAsmBypass.cs
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
 
 
 
@@ -100,7 +105,8 @@ Notes:
 
 Links:  
 https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
-https://gist.githubusercontent.com/subTee/fb09ef511e592e6f7993/raw/e9b28e7955a5646672267a61e9685fc5a4ab5f2a/regsvcs.cs
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Payloads/RegSvcsRegAsmBypass.cs
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
 
 
 
@@ -132,6 +138,7 @@ https://github.com/subTee/AllTheThings
 https://pentestlab.blog/2017/05/08/applocker-bypass-installutil/
 https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_12
 http://subt0x10.blogspot.no/2017/09/banned-file-execution-via.html
+https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/InstallUtil.md
 
 
 
@@ -424,3 +431,16 @@ Notes:
 
 Links:
 http://www.hexacorn.com/blog/2016/07/22/beyond-good-ol-run-key-part-42/
+
+
+
+## 30. WMIC.exe
+
+`wmic process call create calc
+
+Requires admin: No
+
+Notes: 
+
+Links:
+https://stackoverflow.com/questions/24658745/wmic-how-to-use-process-call-create-with-a-specific-working-directory
