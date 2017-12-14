@@ -444,3 +444,20 @@ Notes:
 
 Links:
 https://stackoverflow.com/questions/24658745/wmic-how-to-use-process-call-create-with-a-specific-working-directory
+
+
+
+## 31. MavInject32.exe
+
+`MavInject32.exe <PID> /INJECTRUNNING <PATH DLL>
+
+Requires admin: No
+
+Notes: 
+
+Links:
+https://twitter.com/gN3mes1s/status/941315826107510784
+https://twitter.com/Hexacorn/status/776122138063409152
+
+
+
