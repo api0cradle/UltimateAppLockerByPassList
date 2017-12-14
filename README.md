@@ -436,7 +436,7 @@ http://www.hexacorn.com/blog/2016/07/22/beyond-good-ol-run-key-part-42/
 
 ## 30. WMIC.exe
 
-`wmic process call create calc
+`wmic process call create calc`
 
 Requires admin: No
 
@@ -449,7 +449,7 @@ https://stackoverflow.com/questions/24658745/wmic-how-to-use-process-call-create
 
 ## 31. MavInject32.exe
 
-`MavInject32.exe <PID> /INJECTRUNNING <PATH DLL>
+`MavInject32.exe <PID> /INJECTRUNNING <PATH DLL>`
 
 Requires admin: No
 
