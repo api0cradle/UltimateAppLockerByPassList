@@ -50,7 +50,7 @@ Requires admin: No
 Windows binary: Yes
 Bypasses AppLocker Default rules: No
 
-Notes:
+Notes: 
 
 Links:  
 https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
