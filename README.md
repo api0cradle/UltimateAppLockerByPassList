@@ -7,7 +7,7 @@ This README.MD will be the master and will be updated with known and possible Ap
 **I have created a list of verified bypasses that works against the default rules created with AppLocker.**
 
 For details on how I verified and how to create the default rules you can check my blog: 
-https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/ 
+https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/  
 
 [VerifiedBypasses-DefaultRules.MD](https://github.com/api0cradle/UltimateAppLockerByPassList/blob/master/VerifiedBypasses-DefaultRules.md)
 
@@ -156,7 +156,7 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Ins
 
 `Open .diagcab package`
 
-Requires admin: ?  
+Requires admin: No  
 Windows binary: Yes  
 Bypasses AppLocker Default rules: ?  
 
@@ -173,7 +173,7 @@ https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble
 
 Requires admin: No  
 Windows binary: Yes  
-Bypasses AppLocker Default rules: ?  
+Bypasses AppLocker Default rules: Yes  
 
 Notes:
 
@@ -188,7 +188,7 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
 
 Requires admin: No  
 Windows binary: Yes  
-Bypasses AppLocker Default rules: ?  
+Bypasses AppLocker Default rules: No    
 
 Notes:
 
@@ -203,7 +203,7 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 Requires admin: No  
 Windows binary: Yes  
-Bypasses AppLocker Default rules: ?  
+Bypasses AppLocker Default rules: No  
 
 Notes:
 
@@ -218,7 +218,7 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 Requires admin: No  
 Windows binary: Yes  
-Bypasses AppLocker Default rules: ?  
+Bypasses AppLocker Default rules: No  
 
 Notes:
 
@@ -231,7 +231,7 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 Missing Example
 
-Requires admin: ?  
+Requires admin: No  
 Windows binary: Yes  
 Bypasses AppLocker Default rules: ?  
 
@@ -239,7 +239,7 @@ Bypasses AppLocker Default rules: ?
 Notes:
 
 Links:  
-https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simple-WLEvasion.pdf
+https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
 
 
 
@@ -255,7 +255,7 @@ Bypasses AppLocker Default rules: ?
 Notes:
 
 Links:  
-https://raw.githubusercontent.com/subTee/ShmooCon-2015/master/ShmooCon-2015-Simple-WLEvasion.pdf
+https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
 
 
 
@@ -660,3 +660,18 @@ Requires TrackerUI.dll present in 1028 subfolder.
 
 Links:
 https://twitter.com/Sudhanshu_C/status/943011972261412864
+
+
+
+## 41. .WSF files
+
+`script.wsf`
+
+Requires admin: No  
+Windows binary: No  
+Bypasses AppLocker Default rules: ?  
+
+Notes:
+.WSF files are supposed to not be blocked by AppLocker
+
+Links:
