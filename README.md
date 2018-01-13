@@ -33,7 +33,7 @@ Please contribute and do point out errors or resources I have forgotten.
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: No  
 
-* Notes:
+Notes:
 I only tested on Windows 10 against the default rules, it could work against older Windows versions.
 
 * Links:  
@@ -52,7 +52,7 @@ I only tested on Windows 10 against the default rules, it could work against old
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: No  
 
-*Notes: 
+Notes: 
 I only tested on Windows 10 against the default rules, it could work against older Windows versions.
 
 * Links:  
@@ -69,7 +69,7 @@ I only tested on Windows 10 against the default rules, it could work against old
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: Yes  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://gist.github.com/subTee/6b236083da2fd6ddff216e434f257614
@@ -92,7 +92,7 @@ I only tested on Windows 10 against the default rules, it could work against old
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: Yes  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
@@ -111,7 +111,7 @@ I only tested on Windows 10 against the default rules, it could work against old
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: Yes   
 
-* Notes:
+Notes:
 
 * Links:  
   * https://pentestlab.blog/2017/05/19/applocker-bypass-regasm-and-regsvcs/
@@ -128,7 +128,7 @@ I only tested on Windows 10 against the default rules, it could work against old
 * Windows binary: No  
 * Bypasses AppLocker Default rules: No  
 
-* Notes:
+Notes:
 Will work if BGinfo.exe is located in a path that is trusted by the policy.
 
 * Links:  
@@ -146,7 +146,7 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: Yes  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://github.com/subTee/AllTheThings 
@@ -167,7 +167,7 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: ?  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://cybersyndicates.com/2015/10/a-no-bull-guide-to-malicious-windows-trouble-shooting-packs-and-application-whitelist-bypass/
@@ -183,7 +183,7 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: Yes  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4
@@ -199,7 +199,7 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: No    
 
-* Notes:
+Notes:
 
 * Links:  
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
@@ -215,7 +215,7 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: No  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
@@ -231,7 +231,7 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: No  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_3
@@ -246,7 +246,7 @@ Missing Example
 * Windows binary: Yes  
 * Bypasses AppLocker Default rules: ?  
 
-* Notes:
+Notes:
 
 * Links:  
   * https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
