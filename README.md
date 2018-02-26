@@ -780,12 +780,13 @@ rundll32.exe advpack.dll,LaunchINFSection c:\test.inf,DefaultInstall_SingleUser,
 
 * Requires admin: No  
 * Windows binary: Yes  
-* Bypasses AppLocker Default rules: ?
+* Bypasses AppLocker Default rules: Yes
 
 Notes:
 
 
 * Links:
+  * https://bohops.com/2018/02/26/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence/
   * https://twitter.com/bohops/status/967486047839014913    
   * https://gist.githubusercontent.com/bohops/693dd4d5dbfb500f1c3ace02622d5d34/raw/902ed953a9188b27e91c199b465cddf855c7b94f/test.inf
 
