@@ -377,6 +377,8 @@ Notes:
 * Links:  
   * https://pentestlab.blog/2017/07/06/applocker-bypass-msxsl/
   * https://gist.github.com/subTee/d9380299ff35738723cb44f230ab39a1
+  * https://github.com/3gstudent/Use-msxsl-to-bypass-AppLocker
+  * https://bohops.com/2018/02/26/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence/
 
 
 
@@ -789,9 +791,9 @@ Notes:
   * https://bohops.com/2018/02/26/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence/
   * https://twitter.com/bohops/status/967486047839014913    
   * https://gist.githubusercontent.com/bohops/693dd4d5dbfb500f1c3ace02622d5d34/raw/902ed953a9188b27e91c199b465cddf855c7b94f/test.inf
-
-
-
+  
+  
+  
 ## 47. Advpack.dll - RegisterOCX
 
 ```
@@ -807,9 +809,9 @@ Notes:
 
 * Links:
   * https://twitter.com/Moriarty_Meng/status/977848311603380224
-
-
-
+  
+  
+  
 ## 48. zipfldr.dll - RouteTheCall
 
 ```
@@ -825,3 +827,159 @@ Notes:
 
 * Links:
   * https://twitter.com/Moriarty_Meng/status/977848311603380224
+  
+  
+  
+## 49. url.dll - OpenURL
+
+```
+rundll32.exe url.dll,OpenURL "C:\test\calc.hta"
+rundll32.exe url.dll,OpenURL "C:\test\calc.url"
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+
+
+* Links:
+  * https://bohops.com/2018/03/17/abusing-exported-functions-and-exposed-dcom-interfaces-for-pass-thru-command-execution-and-lateral-movement/
+  * http://www.hexacorn.com/blog/2017/05/01/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline/
+  
+  
+  
+## 50. url.dll - FileProtocolHandler
+
+```
+rundll32.exe url.dll, FileProtocolHandler calc.exe
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+
+
+* Links:
+  * http://www.hexacorn.com/blog/2017/05/01/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline/
+  
+  
+  
+## 51. ieframe.dll - OpenURL
+
+```
+rundll32.exe ieframe.dll,OpenURL "C:\test\calc.url"
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+
+
+* Links:
+  * https://bohops.com/2018/03/17/abusing-exported-functions-and-exposed-dcom-interfaces-for-pass-thru-command-execution-and-lateral-movement/
+  * http://www.hexacorn.com/blog/2018/03/15/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline-part-5/
+  
+  
+  
+## 52. shdocvw.dll - OpenURL
+
+```
+rundll32.exe shdocvw.dll,OpenURL "C:\test\calc.url"
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+
+
+* Links:
+  * https://bohops.com/2018/03/17/abusing-exported-functions-and-exposed-dcom-interfaces-for-pass-thru-command-execution-and-lateral-movement/
+  * http://www.hexacorn.com/blog/2018/03/15/running-programs-via-proxy-jumping-on-a-edr-bypass-trampoline-part-5/
+  
+  
+  
+## 53. ieadvpack.dll - LaunchINFSection
+
+```
+rundll32.exe ieadvpack.dll,LaunchINFSection test.inf,,1,
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+
+
+* Links:
+  * https://bohops.com/2018/03/10/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence-part-2/
+  
+  
+  
+## 54. ie4unit.exe
+
+```
+ie4unit.exe -BaseSettings
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: No
+
+Notes:
+Requires to copy out ie4unit.exe and ieuinit.inf to a user controlled folder. 
+Also need to add SCT in the MSIE4RegisterOCX.Windows7 section
+
+* Links:
+  * https://bohops.com/2018/03/10/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence-part-2/
+  
+  
+
+## 55. Visual Studio Tools for Office - .VSTO files
+
+```
+evilfile.vsto
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+You need to build a solution using Visual Studio Tools for Office. 
+User needs to confirm installation after executing. 
+
+* Links:
+  * https://bohops.com/2018/01/31/vsto-the-payload-installer-that-probably-defeats-your-application-whitelisting-rules/
+  
+  
+  
+  
+## 56. Manage-bde.wsf
+
+```
+cscript c:\windows\system32\manage-bde.wsf
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: ?
+
+Notes:
+Need to adjust comspec variable using: set comspec=c:\windows\system32\calc.exe
+
+* Links:
+  * https://gist.github.com/bohops/735edb7494fe1bd1010d67823842b712
+  * https://twitter.com/bohops/status/980659399495741441
+  
+  
+  
+
