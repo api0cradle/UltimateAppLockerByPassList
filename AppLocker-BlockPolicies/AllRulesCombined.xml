@@ -1,0 +1,449 @@
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Dll" EnforcementMode="Enabled">
+    <FilePublisherRule Id="4dadc0a3-268b-4a07-9d69-af484355de63" Name="ADVPACK.DLL, in INTERNET EXPLORER, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="INTERNET EXPLORER" BinaryName="ADVPACK.DLL">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="ee6a4d6d-a193-4d68-9816-656abd47395a" Name="SYSTEM.MANAGEMENT.AUTOMATION.DLL, in MICROSOFT (R) WINDOWS (R) OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT (R) WINDOWS (R) OPERATING SYSTEM" BinaryName="SYSTEM.MANAGEMENT.AUTOMATION.DLL">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="03588ad0-fbca-4fe8-ae89-d036c96e2841" Name="%SYSTEM32%\winevt\Logs\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\winevt\Logs\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="03f7506e-fc88-4410-b134-150d19801810" Name="%WINDIR%\Temp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="59f621e6-f472-4653-8565-b0c663cd8907" Name="%SYSTEM32%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Tasks\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="859b6b1c-dc1d-4625-a8b1-0e7510730f63" Name="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8aeb3c14-2215-4ab7-9ac1-d2fefb7db979" Name="%SYSTEM32%\Com\dmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Com\dmp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8efd5e75-360f-4be9-8bde-f97dfcde586f" Name="%SYSTEM32%\spool\drivers\color\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\spool\drivers\color\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="af2a2b04-ff42-4edb-b07c-1c1c11a25ec4" Name="%WINDIR%\debug\WIA\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\debug\WIA\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d46b3ac4-277b-43a2-93b8-7129edcbd3be" Name="%WINDIR%\Registration\CRMLog\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Registration\CRMLog\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e70c3b5a-51e9-446f-a0c4-245c23ce0dff" Name="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e7cc4ae8-4119-4e13-869c-1ef0b7f05ef4" Name="%WINDIR%\tracing\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\tracing\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="f65d183c-a0da-41bc-ae20-9847382b036e" Name="%WINDIR%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Tasks\*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Exe" EnforcementMode="Enabled">
+    <FilePublisherRule Id="0229d798-eb3e-4d9a-ab3c-29ca9a7ceb27" Name="ODBCCONF.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="ODBCCONF.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="04b910b4-caab-4f18-84e5-29ae5b4802af" Name="MSHTA.EXE, i INTERNET EXPLORER, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="INTERNET EXPLORER" BinaryName="MSHTA.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="130740f8-8ac7-4570-b0b3-18575f366c8f" Name="SYNCAPPVPUBLISHINGSERVER.EXE, i MICROSOFT (R) WINDOWS (R) OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT (R) WINDOWS (R) OPERATING SYSTEM" BinaryName="SYNCAPPVPUBLISHINGSERVER.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="1b750a91-08d4-44b4-a2c2-bd2f62269892" Name="CDB.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="CDB.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="277c6c14-0897-4dde-ad25-e1710d758dc0" Name="RUNDLL32.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="RUNDLL32.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="363d5a12-c578-4fe8-8903-e4f5104627f4" Name="REGASM.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="REGASM.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="3f665955-7e87-4555-87ad-4549fef9b0b6" Name="FSI.EXE, i MICROSOFT® F#, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® F#" BinaryName="FSI.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="508836c1-7be2-437f-9555-107bcf63183a" Name="MAVINJECT64.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="MAVINJECT64.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="5b55f220-27a6-4a34-b948-68e43c6484ae" Name="WINDBG.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="WINDBG.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="5e310d38-95f6-4b7f-8505-e6a149198c51" Name="TRACKER.EXE, in MICROSOFT® BUILD TOOLS®, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® BUILD TOOLS®" BinaryName="TRACKER.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="5f8108b0-bbc4-48fa-abf2-0c050edc6a19" Name="NTSD.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="NTSD.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="63f43a67-2979-4ac4-8023-392f92a207df" Name="FORFILES.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="FORFILES.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="64d0c5ad-2f74-4b03-8d2f-09de1c2f84e8" Name="INSTALLUTIL.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="INSTALLUTIL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="753da950-f2c1-43b5-9d16-0b15c8a68628" Name="MSDT.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="MSDT.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="7a05cb7c-e69c-45ae-831d-1fedc7925ee4" Name="BGINFO, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="BGINFO" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="7ae88df7-cdd3-439a-a1b6-b5193de057ae" Name="ATBROKER.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="ATBROKER.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="7e5347da-a19e-4ae5-b886-ec29dfcf3978" Name="INFDEFAULTINSTALL.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="INFDEFAULTINSTALL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="808c3e9b-725c-4969-aba3-83b7f9462090" Name="MSBUILD.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="MSBUILD.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="80b3d2b6-8133-482b-8311-94ee3641772c" Name="ADDINPROCESS32.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ADDINPROCESS32.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="822d876e-fdf0-4a8a-ad44-fd42752cc0b1" Name="PRESENTATIONHOST.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="PRESENTATIONHOST.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="88a8e462-ce40-4b04-8634-4d8d634f311c" Name="WMIC.EXE, in MICROSOFT® WINDOWS® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="WMIC.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="8980ba91-5ae8-4b73-b3f8-52910c190041" Name="XWIZARD.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="XWIZARD.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="a79804ad-4c02-45aa-aec4-961dadece78a" Name="KD.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="KD.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="b2b3f98e-1b89-4d82-83e1-7de2c92844ed" Name="ADDINPROCESS.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ADDINPROCESS.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="bb56b1c2-1fda-4127-9449-0af916bf32ec" Name="REGSVCS.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="REGSVCS.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="c31e8190-f75d-4893-a18a-a73037524420" Name="IEEXEC.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="IEEXEC.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="c6ca2ea3-4aac-4108-aa28-4ee06a0e6ea4" Name="CMSTP.EXE, i MICROSOFT(R) CONNECTION MANAGER, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT(R) CONNECTION MANAGER" BinaryName="CMSTP.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="cad337f7-3418-44e2-a898-f46fa9c53011" Name="DBGSVC.EXE, in DEBUG DIAGNOSTIC TOOL, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="DEBUG DIAGNOSTIC TOOL" BinaryName="DBGSVC.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="cad83ab4-94bc-427d-bab0-676df2013f51" Name="DBGHOST.EXE, in DEBUG DIAGNOSTIC TOOL, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="DEBUG DIAGNOSTIC TOOL" BinaryName="DBGHOST.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e3377cc5-bf3c-4296-ab28-6611b11d7c24" Name="DFSVC.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="DFSVC.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e5650154-b497-4e81-beaf-b0e5a80b3d05" Name="MAVINJECT32.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="MAVINJECT32.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="e59cbf1a-4dc2-4206-8659-e2f3f2303446" Name="REGSVR32.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="REGSVR32.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="edadb9c3-9721-462e-ae4b-32e031c231dd" Name="ADDINUTIL.EXE, i MICROSOFT® .NET FRAMEWORK, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® .NET FRAMEWORK" BinaryName="ADDINUTIL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="f5114e04-bb0f-4510-ac72-dd66e8d4b267" Name="NTKD.EXE, i MICROSOFT® WINDOWS® OPERATING SYSTEM, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFT® WINDOWS® OPERATING SYSTEM" BinaryName="NTKD.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="fa3b9617-62a5-4642-9340-fac68c2c9ed6" Name="CSI.EXE, i &quot;&quot;, fra O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="" BinaryName="CSI.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePathRule Id="2098f2a9-fb22-49d3-a126-fa7e8a859739" Name="%SYSTEM32%\winevt\Logs\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\winevt\Logs\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="2b8d1528-ddfb-44cf-9e12-bce2fd30845f" Name="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="64904a7e-f006-46a1-8052-e73b9564c13d" Name="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7ce374b1-3983-4e18-9d8a-17de86121178" Name="%SYSTEM32%\spool\drivers\color\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\spool\drivers\color\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8024cbd5-d315-413e-b352-a9e572fddbb3" Name="%SYSTEM32%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Tasks\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c83133af-6cf9-4f6b-8d5d-d171170c876b" Name="%SYSTEM32%\runscripthelper.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="C:\windows\system32\runscripthelper.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ca98d963-b624-4315-aaf9-ccefb360191c" Name="%SYSTEM32%\Com\dmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Com\dmp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d40d75f9-7241-44fa-bfe8-67075df655f3" Name="%WINDIR%\Registration\CRMLog\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Registration\CRMLog\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="dacb237a-98b2-4530-a47e-2df5fa57467f" Name="%WINDIR%\Temp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="dcf9a571-24ea-401b-9516-01b3418a5786" Name="%WINDIR%\tracing\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\tracing\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e4f13cce-93e8-4817-9103-90566c7beb0f" Name="%WINDIR%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Tasks\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="fdd2d2f7-9395-4be6-a67b-f188cbf5e83c" Name="%WINDIR%\debug\WIA\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\debug\WIA\*" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+  <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Script" EnforcementMode="Enabled">
+    <FilePathRule Id="1cd17645-4d88-41bb-b371-f9c5da231a95" Name="%WINDIR%\Temp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Temp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="34167e2a-5ec3-4aa5-bf66-194e00263c03" Name="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="58f2f080-3acf-47a9-a711-5b5a57b04aa6" Name="%SYSTEM32%\winevt\Logs\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\winevt\Logs\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="69deed0e-e202-41a1-bb19-4cd2b7c27ee3" Name="%WINDIR%\debug\WIA\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\debug\WIA\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7d0a1710-e73a-47c2-a2d5-f0a261cab55e" Name="%SYSTEM32%\spool\drivers\color\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\spool\drivers\color\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="7f91b30d-9f77-4bb0-8d98-ec78a6fc5d64" Name="%WINDIR%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Tasks\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="8078a018-8789-432d-801b-189475e637c8" Name="%WINDIR%\Registration\CRMLog\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Registration\CRMLog\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a7985ddf-19b6-41ab-a299-f3dd49e72af3" Name="%SYSTEM32%\Printing_Admin_Scripts\en-US\pubprn.vbs" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Printing_Admin_Scripts\en-US\pubprn.vbs" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="b627c2fb-0e6a-479c-8603-7d173d498935" Name="%SYSTEM32%\Com\dmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Com\dmp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c40ec82c-f57e-42bf-9c65-ec26b11e856b" Name="%WINDIR%\tracing\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\tracing\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="d3f0b8b9-424c-48cc-9b4f-82c191765c7f" Name="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e39761cb-8314-445b-8f96-9d7bef56e4ad" Name="%SYSTEM32%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Tasks\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ec67734d-d08a-41df-8ee7-ee7c4087d647" Name="%WINDIR%\diagnostics\system\AERO\CL_Invocation.ps1" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\diagnostics\system\AERO\CL_Invocation.ps1" />
+      </Conditions>
+    </FilePathRule>
+  </RuleCollection>
+</AppLockerPolicy>
