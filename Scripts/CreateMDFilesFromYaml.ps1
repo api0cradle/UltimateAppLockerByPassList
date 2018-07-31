@@ -98,7 +98,8 @@ function Add-MainIndex
         # Header
         # OS BINARIES
         #[Atbroker.exe](OSBinaries/Atbroker.md)    
-        "`[$($YamlObject.Name)`]`(md/$($YamlObject.Name)`)" | Add-Content $Outfile
+        "`[$($YamlObject.Name)`]`(md/$($YamlObject.Name).md`)" | Add-Content $Outfile
+        "" | Add-Content $Outfile
     }
     End
     {

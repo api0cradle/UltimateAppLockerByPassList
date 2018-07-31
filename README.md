@@ -7,10 +7,10 @@ I also have a list of generic bypass techniques as well as a legacy list of meth
    
 ## INDEXED LISTS
 
-* [Generic-AppLockerbypasses.md](https://github.com/api0cradle/UltimateAppLockerByPassList/Generic-AppLockerbypasses.md)
-* [VerifiedAppLockerBypasses.md](https://github.com/api0cradle/UltimateAppLockerByPassList/VerifiedAppLockerBypasses.md)
-* [UnverifiedAppLockerBypasses.md](https://github.com/api0cradle/UltimateAppLockerByPassList/UnverifiedAppLockerBypasses.md)
-* [DLL-Execution.md](https://github.com/api0cradle/UltimateAppLockerByPassList/DLL-Execution.md)
+* [Generic-AppLockerbypasses.md](Generic-AppLockerbypasses.md)
+* [VerifiedAppLockerBypasses.md](VerifiedAppLockerBypasses.md)
+* [UnverifiedAppLockerBypasses.md](UnverifiedAppLockerBypasses.md)
+* [DLL-Execution.md](DLL-Execution.md)
    
    
    
