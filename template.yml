@@ -1,0 +1,40 @@
+# Version 1.0
+---
+Name: 'Binary.exe'
+Description: 'Describe use case'
+Created: '2018-05-25'
+Commands:
+  - Command: 'Command 1'
+    Description: 'What command does'
+  - Command: 'Command 2'
+    Description: 'What command does'
+Windows Binary: true
+Bypasses Default AppLocker Rules: true
+Notes: 'Any special things worth knowing about'
+MITRE:
+  - ID: 'T1060'
+  - Link: 'https://attack.mitre.org/wiki/Technique/T1060'
+Atomic Red Teaming:
+  - Description: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1121/T1121.md'
+    Code: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1121/src/T1121.cs'    
+Full path:
+  - Path: 'c:\windows\system32\wbem\wmic.exe'
+  - Path: 'c:\windows\sysWOW64\wbem\wmic.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: true
+  - Windows 10 1607: false
+  - Windows 10 1511: true
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: https://stackoverflow.com/questions/24658745/wmic-how-to-use-process-call-create-with-a-specific-working-directory
+  - Link: https://www.google.com
+Acknowledgement:
+  - Name: 'Oddvar Moe'
+    TwitterHandle: '@oddvarmoe'
+    Blog: 'https://oddvar.moe'
+---

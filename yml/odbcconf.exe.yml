@@ -1,0 +1,41 @@
+---
+Name: 'Odbcconf.exe'
+Description: 'Load unsigned dll file'
+Created: '2018-06-14'
+Commands:
+  - Command: 'odbcconf -f file.rsp'
+    Description: 'Load DLL specified in target .RSP file.'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'c:\windows\system32\odbcconf.exe'
+  - Path: 'c:\windows\sysWOW64\odbcconf.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://gist.github.com/NickTyrer/6ef02ce3fd623483137b45f65017352b'
+  - Link: 'https://github.com/woanware/application-restriction-bypasses'
+  - Link: 'https://twitter.com/subTee/status/789459826367606784'
+Acknowledgement:
+  - Name: 'Nick Tyrer'
+    TwitterHandle: '@NickTyrer'
+    Blog: ''
+  - Name: 'Casey Smith'
+    TwitterHandle: '@Subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---

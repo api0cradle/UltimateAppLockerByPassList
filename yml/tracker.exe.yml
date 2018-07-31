@@ -1,0 +1,36 @@
+---
+Name: 'Tracker.exe'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 'Tracker.exe /d .\calc.dll /c C:\Windows\write.exe'
+    Description: 'Use tracker.exe to proxy execution of an arbitrary DLL into another process.'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: 'Part of Visual studio. Requires TrackerUI.dll present in 1028 subfolder.'
+MITRE:
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1218'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: ''
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://twitter.com/subTee/status/793151392185589760'
+  - Link: 'https://twitter.com/Sudhanshu_C/status/943011972261412864'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@subtee'
+    Blog: 'http://subt0x11.blogspot.com/'
+---

@@ -1,0 +1,38 @@
+---
+Name: 'Dfsvc.exe'
+Description: ''
+Created: '2018-06-12'
+Commands:
+  - Command: 'Missing example'
+    Description: ''
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: 'C:\Windows\Microsoft.NET\Framework\v2.0.50727\Dfsvc.exe'
+  - Path: 'C:\Windows\Microsoft.NET\Framework64\v2.0.50727\Dfsvc.exe'
+  - Path: 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\Dfsvc.exe'
+  - Path: 'C:\Windows\Microsoft.NET\Framework64\v4.0.30319\Dfsvc.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@Subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---

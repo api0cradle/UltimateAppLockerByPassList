@@ -1,0 +1,36 @@
+---
+Name: 'Msdeploy.exe'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 'msdeploy.exe -verb:sync -source:RunCommand -dest:runCommand="c:\temp\bypass.exe & pause"'
+    Description: ''
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: 'Msdeploy is part of webdeploy IIS'
+MITRE:
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1218'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: ''
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://www.iis.net/downloads/microsoft/web-deploy'
+  - Link: 'https://twitter.com/pabraeken/status/999090532839313408'
+Acknowledgement:
+  - Name: 'Pierre-Alexandre Braeken'
+    TwitterHandle: '@pabraeken'
+    Blog: ''
+---

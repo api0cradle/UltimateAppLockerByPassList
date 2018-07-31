@@ -1,0 +1,40 @@
+---
+Name: 'Slmgr.vbs'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 
+    Description: 
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: 'Missing Example - Requires registry changes to activate COM object'
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'C:\Windows\System32\slmgr.vbs'
+  - Path: 'C:\Windows\SysWOW64\slgmr.vbs'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://www.youtube.com/watch?v=3gz1QmiMhss'
+  - Link: 'https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology'
+Acknowledgement:
+  - Name: 'Matt Nelson'
+    TwitterHandle: '@enigma0x3'
+    Blog: 'https://enigma0x3.net'
+  - Name: 'Casey Smith'
+    TwitterHandle: '@subtee'
+    Blog: 'http://subt0x11.blogspot.com/'
+---

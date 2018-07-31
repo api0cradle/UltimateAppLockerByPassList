@@ -1,0 +1,37 @@
+---
+Name: 'Csi.exe'
+Description: 'Proxy execution of C# code'
+Created: '2018-06-12'
+Commands:
+  - Command: 'csi.exe file'
+    Description: 'Use csi.exe to run unsigned C# code.'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\Roslyn\csi.exe'
+  - Path: 'c:\Program Files (x86)\Microsoft Web Tools\Packages\Microsoft.Net.Compilers.X.Y.Z\tools\csi.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://twitter.com/subTee/status/781208810723549188'
+  - Link: 'https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx-exe/'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@Subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---

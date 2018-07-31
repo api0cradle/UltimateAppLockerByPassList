@@ -1,0 +1,37 @@
+---
+Name: 'Te.exe'
+Description: 'Execute unsigned code'
+Created: '2018-06-14'
+Commands:
+  - Command: 'te.exe bypass.wsc'
+    Description: 'Executes code inside the bypass.wsc file'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: ''
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://twitter.com/gN3mes1s/status/927680266390384640'
+  - Link: 'https://gist.github.com/N3mes1s/5b75a4cd6aa4d41bb742acace2c8ab42'
+  - Link: 'https://docs.microsoft.com/en-us/windows-hardware/drivers/taef/'
+Acknowledgement:
+  - Name: 'Giuseppe'
+    TwitterHandle: '@gN3mes1s '
+    Blog: 'https://quequero.org/'
+---
