@@ -2,6 +2,16 @@
   <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
   <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
   <RuleCollection Type="Exe" EnforcementMode="Enabled">
+    <FilePathRule Id="13bcae9c-a08c-4757-a803-c088e9e55d3e" Name="%SYSTEM32%\Fxstmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Fxstmp\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="1e425995-2818-4846-a67c-e42601be3f5b" Name="%SYSTEM32%\Tasks\Microsoft\Windows\PLA\System\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Tasks\Microsoft\Windows\PLA\System\*" />
+      </Conditions>
+    </FilePathRule>
     <FilePathRule Id="2098f2a9-fb22-49d3-a126-fa7e8a859739" Name="%SYSTEM32%\winevt\Logs\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
         <FilePathCondition Path="%SYSTEM32%\winevt\Logs\*" />
@@ -10,6 +20,21 @@
     <FilePathRule Id="2b8d1528-ddfb-44cf-9e12-bce2fd30845f" Name="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
         <FilePathCondition Path="%SYSTEM32%\catroot2\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="42a009bf-e003-4019-836f-4b887554f304" Name="SCCM - %WINDIR%\ccm\logs\*" Description="SCCM Specific" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\ccm\logs\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="64904a7e-f006-46a1-8052-e73b9564c13d" Name="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="78dba2df-5fe6-4b7e-a274-bd647dc677ab" Name="%SYSTEM32%\Spool\PRINTERS\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Spool\PRINTERS\*" />
       </Conditions>
     </FilePathRule>
     <FilePathRule Id="7ce374b1-3983-4e18-9d8a-17de86121178" Name="%SYSTEM32%\spool\drivers\color\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
@@ -22,14 +47,49 @@
         <FilePathCondition Path="%SYSTEM32%\Tasks\*" />
       </Conditions>
     </FilePathRule>
+    <FilePathRule Id="931d4c73-a03d-460f-8acd-61001486f6d2" Name="SCCM - %WINDIR%\ccm\systemtemp\appvtempdata\appvcommandoutput\*" Description="SCCM specific" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\ccm\systemtemp\appvtempdata\appvcommandoutput\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="a25feaab-a5bf-4540-aa52-e731d2cc1d0a" Name="%SYSTEM32%\Tasks\Microsoft\Windows\SyncCenter\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Tasks\Microsoft\Windows\SyncCenter\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="c83133af-6cf9-4f6b-8d5d-d171170c876b" Name="%SYSTEM32%\runscripthelper.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="C:\windows\system32\runscripthelper.exe" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="ca98d963-b624-4315-aaf9-ccefb360191c" Name="%SYSTEM32%\Com\dmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Com\dmp\*" />
+      </Conditions>
+    </FilePathRule>
     <FilePathRule Id="d40d75f9-7241-44fa-bfe8-67075df655f3" Name="%WINDIR%\Registration\CRMLog\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
         <FilePathCondition Path="%WINDIR%\Registration\CRMLog\*" />
       </Conditions>
     </FilePathRule>
+    <FilePathRule Id="d8d97bbb-e9bb-4b4a-8ea2-d0dec222dd9a" Name="%SYSTEM32%\Spool\SERVERS\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\Spool\SERVERS\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="dacb237a-98b2-4530-a47e-2df5fa57467f" Name="%WINDIR%\Temp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\Temp\*" />
+      </Conditions>
+    </FilePathRule>
     <FilePathRule Id="dcf9a571-24ea-401b-9516-01b3418a5786" Name="%WINDIR%\tracing\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
         <FilePathCondition Path="%WINDIR%\tracing\*" />
+      </Conditions>
+    </FilePathRule>
+    <FilePathRule Id="e4cfeb3a-ec89-4942-a53c-3f7575820f1a" Name="SCCM - %WINDIR%\ccm\inventory\noidmifs\*" Description="SCCM specific" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%WINDIR%\ccm\inventory\noidmifs\*" />
       </Conditions>
     </FilePathRule>
     <FilePathRule Id="e4f13cce-93e8-4817-9103-90566c7beb0f" Name="%WINDIR%\Tasks\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
@@ -40,26 +100,6 @@
     <FilePathRule Id="fdd2d2f7-9395-4be6-a67b-f188cbf5e83c" Name="%WINDIR%\debug\WIA\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
       <Conditions>
         <FilePathCondition Path="%WINDIR%\debug\WIA\*" />
-      </Conditions>
-    </FilePathRule>
-    <FilePathRule Id="64904a7e-f006-46a1-8052-e73b9564c13d" Name="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%SYSTEM32%\Microsoft\Crypto\RSA\MachineKeys\*" />
-      </Conditions>
-    </FilePathRule>
-    <FilePathRule Id="dacb237a-98b2-4530-a47e-2df5fa57467f" Name="%WINDIR%\Temp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%WINDIR%\Temp\*" />
-      </Conditions>
-    </FilePathRule>
-    <FilePathRule Id="ca98d963-b624-4315-aaf9-ccefb360191c" Name="%SYSTEM32%\Com\dmp\*" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%SYSTEM32%\Com\dmp\*" />
-      </Conditions>
-    </FilePathRule>
-    <FilePathRule Id="c83133af-6cf9-4f6b-8d5d-d171170c876b" Name="%SYSTEM32%\runscripthelper.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="C:\windows\system32\runscripthelper.exe" />
       </Conditions>
     </FilePathRule>
   </RuleCollection>
