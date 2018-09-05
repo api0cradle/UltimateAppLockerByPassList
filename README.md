@@ -24,8 +24,9 @@ For details on how I verified and how to create the default rules you can check 
 https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/  
 
 ## BLOCK RULES
-The rules can be found in the [AppLocker-BlockPolicies](AppLocker-BlockPolicies folder).
-
+The rules can be found in the AppLocker-BlockPolicies folder.
+   
+    
 Please contribute and do point out errors or resources I have forgotten.
 
 
