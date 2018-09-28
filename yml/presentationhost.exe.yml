@@ -1,0 +1,37 @@
+---
+Name: 'Presentationhost.exe'
+Description: 'Proxy execution of code through XAML Browser Application.'
+Created: '2018-06-12'
+Commands:
+  - Command: 'Presentationhost.exe C:\temp\Evil.xbap'
+    Description: 'Executes the target XAML Browser Application (XBAP) file.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: 'T1117'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1117'
+Atomic Red Teaming:
+  - Description: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1117/T1117.md'
+    Code: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1117/RegSvr32.sct'    
+Full path:
+  - Path: 'c:\windows\system32\PresentationHost.exe'
+  - Path: 'c:\windows\sysWOW64\PresentationHost.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf'
+  - Link: 'https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@Subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---

@@ -1,0 +1,37 @@
+---
+Name: 'Fsi.exe'
+Description: 'Execute code through f-sharp'
+Created: '2018-06-12'
+Commands:
+  - Command: 'fsi.exe c:\folder\d.fscript'
+    Description: 'Use fsi.exe to run unsigned F# code.'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: ''
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+- Link: 'https://twitter.com/subTee/status/781208810723549188'
+- Link: 'https://twitter.com/NickTyrer/status/904273264385589248'
+- Link: 'https://docs.microsoft.com/en-us/dotnet/fsharp/tutorials/fsharp-interactive/'
+Acknowledgement:
+  - Name: 'Nick Tyrer'
+    TwitterHandle: '@NickTyrer'
+    Blog: ''
+---

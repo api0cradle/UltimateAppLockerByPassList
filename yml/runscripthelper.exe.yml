@@ -1,0 +1,36 @@
+---
+Name: 'Runscripthelper.exe'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 'runscripthelper.exe surfacecheck \\?\C:\Test\Microsoft\Diagnosis\scripts\test.txt C:\Test'
+    Description: 'Execute the PowerShell script named test.txt.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1218'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: 'C:\Windows\WinSxS\amd64_microsoft-windows-u..ed-telemetry-client_31bf3856ad364e35_10.0.16299.15_none_c2df1bba78111118\Runscripthelper.exe'
+  - Path: 'C:\Windows\WinSxS\amd64_microsoft-windows-u..ed-telemetry-client_31bf3856ad364e35_10.0.16299.192_none_ad4699b571e00c4a\Runscripthelper.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://posts.specterops.io/bypassing-application-whitelisting-with-runscripthelper-exe-1906923658fc'
+Acknowledgement:
+  - Name: 'Matt Graeber'
+    TwitterHandle: '@mattifestation'
+    Blog: 'http://www.exploit-monday.com/'
+---

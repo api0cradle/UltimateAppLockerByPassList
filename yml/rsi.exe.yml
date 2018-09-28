@@ -1,0 +1,35 @@
+---
+Name: 'Rsi.exe'
+Description: 'IKKE FERDIG'
+Created: '2018-06-12'
+Commands:
+  - Command: 'dnx.exe consoleapp'
+    Description: 'Execute C# code located in the consoleapp folder via Program.cs and Project.json (Note - Requires dependencies)'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: ''
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://enigma0x3.net/2016/11/17/bypassing-application-whitelisting-by-using-dnx-exe/'
+Acknowledgement:
+  - Name: 'Matt Nelson'
+    TwitterHandle: '@enigma0x3'
+    Blog: 'https://enigma0x3.net/'
+---

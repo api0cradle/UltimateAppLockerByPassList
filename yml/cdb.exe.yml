@@ -1,0 +1,38 @@
+---
+Name: 'Cdb.exe'
+Description: 'Executes shellcode from wds file'
+Created: '2018-06-14'
+Commands:
+  - Command: 'cdb.exe -cf x64_calc.wds -o notepad.exe'
+    Description: 'Execute C# code located in the calc.wds file'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x64\cdb.exe'
+  - Path: 'C:\Program Files (x86)\Windows Kits\10\Debuggers\x86\cdb.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html'
+  - Link: 'https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/cdb-command-line-options'
+  - Link: 'https://gist.github.com/mattifestation/94e2b0a9e3fe1ac0a433b5c3e6bd0bda'
+Acknowledgement:
+  - Name: 'Matt Graeber'
+    TwitterHandle: '@mattifestation'
+    Blog: 'http://www.exploit-monday.com/'
+---

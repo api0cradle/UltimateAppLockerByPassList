@@ -1,0 +1,39 @@
+---
+Name: 'InfDefaultInstall.exe'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 'InfDefaultInstall.exe Infdefaultinstall.inf'
+    Description: 'Executes SCT script using scrobj.dll from a command in entered into a specially prepared INF file.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1218'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: 'C:\Windows\System32\Infdefaultinstall.exe'
+  - Path: 'C:\Windows\SysWOW64\Infdefaultinstall.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://twitter.com/KyleHanslovan/status/911997635455852544'
+  - Link: 'https://gist.github.com/KyleHanslovan/5e0f00d331984c1fb5be32c40f3b265a'
+  - Link: 'https://blog.conscioushacker.io/index.php/2017/10/25/evading-microsofts-autoruns/'
+  - Link: 'https://medium.com/@KyleHanslovan/re-evading-autoruns-pocs-on-windows-10-dd810d7e8a3f'
+Acknowledgement:
+  - Name: 'Kyle Hanslovan'
+    TwitterHandle: '@kylehanslovan'
+    Blog: 'https://medium.com/@KyleHanslovan'
+---

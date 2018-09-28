@@ -1,0 +1,37 @@
+---
+Name: 'Winword.exe'
+Description: ''
+Created: '2018-07-31'
+Commands:
+  - Command: 'winword.exe /l dllfile.dll'
+    Description: 'Executes dll using winword.exe. No commonly made DLL example file available'
+Windows Binary: false
+Bypasses Default AppLocker Rules: false
+Notes: 'Calls rundll32 shell32.dll,control_rundll internally'
+MITRE:
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1218'
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''    
+Full path:
+  - Path: 'c:\Program Files (x86)\Microsoft Office\root\Office16\WINWORD.EXE'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://twitter.com/vysecurity/status/884755482707210241'
+  - Link: 'https://twitter.com/subTee/status/884615369511636992'
+  - Link: 'https://twitter.com/Hexacorn/status/885258886428725250'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---

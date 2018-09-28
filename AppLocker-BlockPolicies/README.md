@@ -5,10 +5,11 @@ https://docs.microsoft.com/nb-no/windows/security/threat-protection/device-guard
 
 **IMPORTANT:  
 These rules have had minimal of testing in a live environment.  
-This ruleset can break stuff. Just sayin.**
+This ruleset can break stuff. Just sayin.
+The ruleset will block stuff like powershell/cmd.**
 
-I have exported all the rules into seperate XML files as well as a combined ruleset including 
-all the rules if you want 1 group policy with AppLocker rules. The combined is named AllRulesCombined.xml.
+
+I have exported all the rules into seperate XML files. 
 
 I prefer to have the following structure when it comes to implementing these rules. 
 
@@ -33,7 +34,6 @@ The rules should now be visible in the GUI like this:
 
 
 I am still missing signatures for these binaries:   
-* bash.exe
 * dnx.exe
 * fsianycpu.exe
 * lxssmanager.dll

