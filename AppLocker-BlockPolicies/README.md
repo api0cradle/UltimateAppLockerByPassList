@@ -34,7 +34,6 @@ The rules should now be visible in the GUI like this:
 
 
 I am still missing signatures for these binaries:   
-* bash.exe
 * dnx.exe
 * fsianycpu.exe
 * lxssmanager.dll

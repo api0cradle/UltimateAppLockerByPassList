@@ -177,6 +177,11 @@
         <FilePathCondition Path="%WINDIR%\debug\WIA\*" />
       </Conditions>
     </FilePathRule>
+    <FilePathRule Id="4e09139e-5f79-432f-934f-430df91c1a4b" Name="%SYSTEM32%\bash.exe" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <Conditions>
+        <FilePathCondition Path="%SYSTEM32%\bash.exe" />
+      </Conditions>
+    </FilePathRule>
   </RuleCollection>
   <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
   <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
