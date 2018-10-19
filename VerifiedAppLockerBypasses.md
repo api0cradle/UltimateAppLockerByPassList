@@ -11,3 +11,4 @@ This list contains all the bypasses that has been verified to bypass AppLocker d
 
 [Regsvcs.exe](md/Regsvcs.exe.md)
 
+[Presentationhost.exe](md/Presentationhost.exe.md)
