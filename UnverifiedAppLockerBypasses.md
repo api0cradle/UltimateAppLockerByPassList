@@ -37,8 +37,6 @@ This list contains all the bypasses that has NOT been verified, or does not bypa
 
 [Odbcconf.exe](md/Odbcconf.exe.md)
 
-[Presentationhost.exe](md/Presentationhost.exe.md)
-
 [Pubprn.vbs](md/Pubprn.vbs.md)
 
 [Rcsi.exe](md/Rcsi.exe.md)
