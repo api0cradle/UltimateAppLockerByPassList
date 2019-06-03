@@ -62,8 +62,16 @@ accesschk -w -s -q -u "Authenticated Users" "C:\Windows" >> windows.txt
 accesschk -w -s -q -u Interactive "C:\Windows" >> windows.txt
 ```
 
-    
+## User writeable files
+There are cases where files are writeable by the user and can be used to bypass AppLocker. One such known case is 3 files under C:\windows\system32\AppLocker called:
 
+* AppCache.dat
+* AppCache.dat.LOG1
+* AppCache.dat.LOG2
+
+These files are writeable by the first user that logs on to the computer after AppLocker has been deployed to the machine. More details here: 
+
+* https://oddvar.moe/2019/05/29/a-small-discovery-about-applocker/
    
 ## PowerShell version 2
 
