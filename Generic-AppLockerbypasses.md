@@ -26,6 +26,8 @@ C:\Windows\System32\spool\drivers\color
 
 C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter
 
+C:\Windows\System32\Tasks_Migrated (after peforming a version upgrade of Windows 10)
+
 C:\Windows\SysWOW64\FxsTmp
 
 C:\Windows\SysWOW64\com\dmp
