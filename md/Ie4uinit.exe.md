@@ -1,7 +1,7 @@
-## Ie4unit.exe
+## Ie4uinit.exe
 ```
 
-ie4unit.exe -BaseSettings
+ie4uinit.exe -BaseSettings
 Executes commands from a specially prepared ie4uinit.inf file.
 ```
 * Windows binary: True   
