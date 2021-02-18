@@ -18,11 +18,15 @@ C:\Windows\System32\com\dmp
 
 C:\Windows\System32\Microsoft\Crypto\RSA\MachineKeys
 
+C:\Windows\SysWOW64\Microsoft\Crypto\RSA\MachineKeys
+
 C:\Windows\System32\spool\PRINTERS
 
 C:\Windows\System32\spool\SERVERS
 
 C:\Windows\System32\spool\drivers\color
+
+C:\Windows\SysWOW64\spool\drivers\color
 
 C:\Windows\System32\Tasks\Microsoft\Windows\SyncCenter
 
