@@ -30,5 +30,7 @@ The rules can be found in the AppLocker-BlockPolicies folder.
 Please contribute and do point out errors or resources I have forgotten.
 
 
-  
+## Other tools
+Remember to check out my Powershell module called PowerAL: https://github.com/api0cradle/PowerAL
+This can help you identify weaknesses
 
