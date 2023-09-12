@@ -1,6 +1,6 @@
 # Ultimate AppLocker ByPass List
 The goal of this repository is to document the most common and known techniques to bypass AppLocker. 
-Since AppLocker can be configured in different ways I maintain a verified list of bypasses (that works against the default AppLocker rules) and a list with possible bypass technique (depending on configuration) or claimed to be a bypass by someone. 
+Since AppLocker can be configured in different ways I maintained a verified list of bypasses (that works against the default AppLocker rules) and a list with possible bypass techniques (depending on configuration) or claimed to be a bypass by someone. 
 I also have a list of generic bypass techniques as well as a legacy list of methods to execute through DLLs.
    
    
@@ -15,7 +15,7 @@ I also have a list of generic bypass techniques as well as a legacy list of meth
    
    
 ## YML
-I have also created everything in YML format so it the data can be reused.
+I have also created everything in YML format so that the data can be reused.
 The YML files can be found under the YML folder. 
       
      
